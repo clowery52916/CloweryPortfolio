@@ -77,8 +77,8 @@ class Projects extends Component {
           Take a look at some of my projects!
         </p><br/>
         <h4>
-          <Link to='drinkdriver.herokuapp.com/'>Drink Driver</Link>        <br/>
-          <Link to='squadboxfacialapp.herokuapp.com/'>SquadBox</Link>      </h4>
+          <a href='drinkdriver.herokuapp.com/'>Drink Driver</a>        <br/>
+          <a href='squadboxfacialapp.herokuapp.com/'>SquadBox</a>      </h4>
 
 
           <TextContainer>
