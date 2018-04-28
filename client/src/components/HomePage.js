@@ -32,7 +32,7 @@ const LandingText = styled.div`
   border-radius: 1px;
   padding: 20px;
   font-family: 'Satisfy', cursive;
-  font-size: 30px;
+  font-size: 20px;
 h2 {
   color: white;
 }
