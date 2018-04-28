@@ -69,7 +69,7 @@ class Navbar extends Component {
               {/* link to map page*/}
             </LinkMargin>
             <LinkMargin>
-              {/* link to home page*/}
+            <Image src='https://i.imgur.com/CKOE7MN.jpg'>Resume</Image>
             </LinkMargin>
             <Link to="/">Home</Link>
             <LinkMargin>
