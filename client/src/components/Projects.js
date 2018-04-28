@@ -2,9 +2,10 @@ import React, {Component} from "react";
 import styled from "styled-components";
 import {Button, Image } from "semantic-ui-react";
 import GridExampleCelled from "./GridExampleCelled";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
 import '../App.css'
 import NavBar from './NavBar'
+
 
 
 const TextContainer = styled.div`
@@ -76,9 +77,9 @@ class Projects extends Component {
           Take a look at some of my projects!
         </p><br/>
         <h4>
-          <Link to='https://drinkdriver.herokuapp.com/'>Drink Driver</Link>
+          <Redirect to='https://drinkdriver.herokuapp.com/'>Drink Driver</Redirect>
           <br/>
-          <Link to='https://squadboxfacialapp.herokuapp.com/'>SquadBox</Link>
+          <Redirect to='https://squadboxfacialapp.herokuapp.com/'>SquadBox</Redirect>
         </h4>
 
 
