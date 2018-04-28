@@ -77,10 +77,8 @@ class Projects extends Component {
           Take a look at some of my projects!
         </p><br/>
         <h4>
-          <Redirect to='https://drinkdriver.herokuapp.com/'>Drink Driver</Redirect>
-          <br/>
-          <Redirect to='https://squadboxfacialapp.herokuapp.com/'>SquadBox</Redirect>
-        </h4>
+          <Link to='drinkdriver.herokuapp.com/'>Drink Driver</Link>        <br/>
+          <Link to='squadboxfacialapp.herokuapp.com/'>SquadBox</Link>      </h4>
 
 
           <TextContainer>
@@ -103,7 +101,12 @@ class Projects extends Component {
             <span>{' '}</span>
             <span>{' '}</span>
             <span>{' '}</span>
+            <span>{' '}</span>
+            <span>{' '}</span>
             <Image alt='express logo' src='http://mean.io/wp-content/themes/twentysixteen-child/images/express.png' height={50} width={100}/>
+            <span>{' '}</span>
+            <span>{' '}</span>
+            <span>{' '}</span>
             <span>{' '}</span>
             <span>{' '}</span>
             <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png' height={50} width={100} alt='nodejs logo'></Image>
