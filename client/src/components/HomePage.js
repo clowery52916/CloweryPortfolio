@@ -4,6 +4,8 @@ import { Button } from "semantic-ui-react";
 import GridExampleCelled from "./GridExampleCelled";
 import GridExampleCelled2 from "./GridExampleCelled2";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
+import NavBar from './NavBar'
 
 
 
@@ -60,12 +62,16 @@ class HomePage extends Component {
   render() {
     return (
       <HomeContainer>
+        <NavBar/>
         <LandingImage>
+          <Fade left>
           <LandingText>
-            <h1>Hello, <br/>
-            I'm Courtney Lowery.
+            <h1>
+            Let's make something beautiful,<br/>
+             together.
           </h1>
           </LandingText>
+          </Fade>
             {/* <LandingSubText>
 
             </LandingSubText> */}
@@ -84,7 +90,7 @@ class HomePage extends Component {
             </ButtonPadding> */}
 
         </LandingImage>
-
+{/* <GridExampleCelled/> */}
         {/* <BodyContent> */}
           {/* <GridExampleCelled /> */}
         {/* </BodyContent> */}

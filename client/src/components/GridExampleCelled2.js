@@ -11,7 +11,7 @@ const GridExampleCelled2 = () => (
   <Grid celled stackable>
     <Grid.Row>
       <Grid.Column computer={3}>
-        <Image src='https://images.unsplash.com/photo-1453301109223-3e2085a1e69d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f3e07d16e1e5020f05c4ea28b32cddcf&auto=format&fit=crop&w=634&q=80' />
+        <Image src='https://thumbs.dreamstime.com/t/humo-coloreado-en-un-fondo-negro-52593275.jpg' />
       </Grid.Column>
       <Grid.Column computer={13}>
         <TextContainer>
@@ -32,7 +32,7 @@ and I don't believe Lorem Ipsum has the stamina.</p>
 
     <Grid.Row>
       <Grid.Column computer={3}>
-        <Image src='https://images.unsplash.com/photo-1504889100631-d557a48f0d30?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3e0bbe98f30034814a40c517f9d261b9&auto=format&fit=crop&w=638&q=80' />
+        <Image src='https://media.istockphoto.com/photos/colored-smoke-isolated-on-a-black-background-picture-id656383350?k=6&m=656383350&s=612x612&w=0&h=VwnrU-xvCVNzpgANxfDj92FWhKIxj3nUeOBVxTaxvm4=' />
       </Grid.Column>
       <Grid.Column computer={10}>
         <TextContainer>
@@ -48,7 +48,7 @@ other people. It also could be some wordsmith sitting on their bed that weights
 </TextContainer>
       </Grid.Column>
       <Grid.Column computer={3}>
-        <Image src='https://images.unsplash.com/photo-1506834032040-36f9dcabe7ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e7a9c1961a9020d95af82bd7e10dbf93&auto=format&fit=crop&w=500&q=60' />
+        <Image src='http://holidayrewards.co/wp-content/uploads/2018/03/cool-colorful-pictures-cool-colorful-graphics-colorful-backgrounds-lg-wallpapers-free-download-colorful-pictures-of-elephants.jpg' />
       </Grid.Column>
     </Grid.Row>
   </Grid>

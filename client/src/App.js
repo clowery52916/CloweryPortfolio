@@ -18,14 +18,12 @@ const Flex = styled.div `
 class App extends Component {
   render() {
     return (<Router>
+
       <div>
         <Flex>
-          <Switch>
             <Route exact="exact" path="/" componenet={HomePage}/>
-          </Switch>
-          <Switch>
             <Route exact="exact" path="/projects" component={Projects}/>
-          </Switch>
+
           <HomePage/>
         </Flex>
       </div>

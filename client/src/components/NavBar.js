@@ -12,8 +12,8 @@ const Logo = styled.img`
 const Nav = styled.div`
   height: 10vh;
   width: 100vw;
-  background-color: #f6fcff;
-  color: #020478;
+  background-color: black;
+  color: white
   display: flex;
     font-family: 'Satisfy', cursive;
     font-size: 20px;
@@ -24,9 +24,9 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  border-bottom: .9px solid #020478;
+  border-bottom: .9px solid white
   a {
-  color: #020478;
+  color: white
     margin: auto;
       text-decoration: none;
   }
@@ -66,12 +66,12 @@ class Navbar extends Component {
             <LinkMargin>
               {/* link to home page*/}
             </LinkMargin>
-            <Link to="/">About Me</Link>
+            <Link to="/">Home</Link>
             <LinkMargin>
               {/* link to home page*/}
             </LinkMargin>
             <LinkMargin>
-              <Link to='/contact'>Contact</Link>
+              {/* <Link to='/contact'>Contact</Link> */}
             </LinkMargin>
           </LinkContainer>
         </div>
