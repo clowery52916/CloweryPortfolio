@@ -5,29 +5,25 @@ import Projects from './components/Projects';
 import HomePage from './components/HomePage';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import Resume from './components/Resume'
 
 const Flex = styled.div `
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: red;
-  color: #EAEAEA;
+  flex-direction:column;
 `;
 
 class App extends Component {
   render() {
     return (<Router>
-
-      <div>
         <Flex>
-            <Route exact="exact" path="/" componenet={HomePage}/>
-            <Route exact="exact" path="/projects" component={Projects}/>
-
-          <HomePage/>
+        <NavBar/>
+        <Switch>
+          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/resume" component={Resume}/>
+        </Switch>
+        <Footer/>
         </Flex>
-      </div>
-    </Router>);
+      </Router>);
   }
 }
 

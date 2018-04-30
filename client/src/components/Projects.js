@@ -10,7 +10,8 @@ import NavBar from './NavBar'
 
 const TextContainer = styled.div`
     font-family: 'Satisfy', cursive;
-    font-size: 40px;
+    font-size: 20px;
+    align-items:center;
 `
 const ImageContainer = styled.div `
   background-image: url("https://farm2.static.flickr.com/1232/552451503_42027c4351_b.jpg");
@@ -19,47 +20,40 @@ const ImageContainer = styled.div `
   height: 100vh;
   width: 100vw;
   display: flex;
+  align-items: center;
 `;
 const HomeContainer = styled.div `
   text-align: center;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #151515;
   color: black;
+  align-items: center;
 `;
 
 const LandingText = styled.div `
-  margin: auto;
+  margin:margin-left
   text-align: center;
-  ${'' /* background: rgba(0, 0, 0, 0.5); */}
+  color: vec3(1.0, 1.0, 1.0);
+  border-radius: 1px;
   padding: 20px;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  object-fit: contain;
+    align-items: center;
+a {
   color: black;
-  border-radius: 10px;
-    font-family: 'Satisfy', cursive;
-    a {
-    color: black
-      margin: auto;
-        text-decoration: none;
-    }
-  ${'' /* font-family: 'Fira Sans', sans-serif, italic, ; */}
-
-
-h1 {
-    font-size: 60px;
-
-
-  }
+  text-decoration: none;
+}
 `;
-const ButtonPadding = styled.div `
-  margin: 5px;
-`;
+
 const BodyContent = styled.div `
   width: 75vw;
   height: 100vh;
   text-align: center;
   margin: 20px auto;
   color: white;
-  text-decoration: none
+  text-decoration: none;
+    align-items: center;
 
 `;
 
@@ -68,21 +62,22 @@ class Projects extends Component {
   render() {
     return (
 <div>
-      <NavBar/>
+  <HomeContainer>
       <ImageContainer>
 
         <LandingText>
           <h1>My Work</h1>
           <p>
           Take a look at some of my projects!
-        </p><br/>
+        </p>
+        <br/>
         <h4>
           <a href='https://drinkdriver.herokuapp.com/'>Drink Driver</a>
           <br/>
-          
+
           <a href='https://squadboxfacialapp.herokuapp.com/'>SquadBox</a>      </h4>
 
-
+<br/>
           <TextContainer>
           <h1>Tech Stack</h1>
           </TextContainer>
@@ -124,15 +119,12 @@ class Projects extends Component {
             <span>{' '}</span>
             <Image alrt='html css js' src='https://cdn-images-1.medium.com/max/1600/1*JS6rHA65p0RKGVLwH2cC4A.png' height={75} width={150} />
           </div>
-          {/* <ButtonPadding>
-            <Button type="submit">Sign Up</Button>
-          </ButtonPadding>
-          <ButtonPadding>
-            <Button type="submit">Log In</Button>
-          </ButtonPadding> */}
-
+          <span>{' '}</span>
+          <span>{' '}</span>
+          <span>{' '}</span>
         </LandingText>
       </ImageContainer>
+      </HomeContainer>
     </div>
   );
   }

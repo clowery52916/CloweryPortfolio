@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
 const FooterStyle = styled.div`
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   background-color: black;
   color: white;
@@ -20,8 +20,11 @@ const FooterStyle = styled.div`
     margin: auto;
       text-decoration: none;
   }
-  h5, h4 {
+  h5, h4, h2 {
     margin: 20px;
+  }
+  h2{
+    font-family: monospace;
   }
 `;
 
@@ -30,7 +33,7 @@ class Footer extends Component {
     return (
       <div>
         <FooterStyle>
-          <h5>Copyright 2018</h5>
+          <h2> ©</h2><span>2018</span>
           <Link to='https://www.celoweb.design'>Website</Link>
           <h4>Atlanta, GA</h4>
         </FooterStyle>
