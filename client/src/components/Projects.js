@@ -61,9 +61,9 @@ class Projects extends Component {
 
   render() {
     return (
-<div>
+<div><ImageContainer>
   <HomeContainer>
-      <ImageContainer>
+
 
         <LandingText>
           <h1>My Work</h1>
@@ -123,8 +123,9 @@ class Projects extends Component {
           <span>{' '}</span>
           <span>{' '}</span>
         </LandingText>
-      </ImageContainer>
+
       </HomeContainer>
+      </ImageContainer>
     </div>
   );
   }

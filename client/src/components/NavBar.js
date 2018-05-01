@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Flash from 'react-reveal/Flash';
 
+
 const Logo = styled.img `
   max-height: 70px;
   border-radius: 30px;
@@ -51,12 +52,12 @@ class Navbar extends Component {
     return (<Nav>
       {/* https://www.designfreelogoonline.com/wp-content/uploads/2014/12/00574-Industry-Gear-logo-design-free-logos-online-01.png */}
 
-      <Logo src='https://i.imgur.com/AT6oyJl.jpg' alt='logo'/> {/* site name goes here */}
+      <Logo src='https://i.imgur.com/AT6oyJl.jpg' alt='logo'>
+  </Logo> {/* site name goes here */}
       <Flash>
-        <h3>Please excuse the mess, this page is under construction</h3>
+        <h3>This page is under construction</h3>
       </Flash>
       <div>
-
         <LinkContainer>
           <LinkMargin>
             <Link to="/projects">Projects</Link>
