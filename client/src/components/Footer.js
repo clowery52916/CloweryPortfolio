@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons';
+
 
 const FooterStyle = styled.div`
   height: 10vh;
@@ -34,7 +36,10 @@ class Footer extends Component {
       <div>
         <FooterStyle>
           <h2> ©</h2><span>2018</span>
-          <Link to='https://www.celoweb.design'>Website</Link>
+          <SocialIcon url="https://www.linkedin.com/in/courtney-lowery52916" />
+            <SocialIcon className='git' url="https://github.com/clowery52916" color='white'/>
+              <SocialIcon url="https://mail.google.com/mail/u/0/"/>
+                <SocialIcon  url="https://twitter.com/Clowery5183"/>
           <h4>Atlanta, GA</h4>
         </FooterStyle>
       </div>

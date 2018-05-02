@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import {Button} from "semantic-ui-react";
-import GridExampleCelled from "./GridExampleCelled";
 import GridExampleCelled2 from "./GridExampleCelled2";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar'
+
 
 const LandingImage = styled.div `
   background-image: url("https://www.walldevil.com/wallpapers/w05/colorful-smoke-black-background.jpg");
@@ -19,7 +19,7 @@ const LandingImage = styled.div `
 const HomeContainer = styled.div `
   text-align: center;
   overflow-y: scroll;
-  background-color: white;
+  background-color: black;
   color: hsl(353, 28%, 63%);
 
 `;
@@ -64,6 +64,7 @@ class HomePage extends Component {
               Let's make something beautiful,<br/>
               together.
             </h1>
+
           </LandingText>
         </Fade>
       </LandingImage>

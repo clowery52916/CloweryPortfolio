@@ -1,10 +1,14 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import {Button, Image } from "semantic-ui-react";
-import GridExampleCelled from "./GridExampleCelled";
 import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
 import '../App.css'
 import NavBar from './NavBar'
+
+
+const Letters = styled.img`
+  image-resolution: from-image;
+`
 
 
 
@@ -14,13 +18,17 @@ const TextContainer = styled.div`
     align-items:center;
 `
 const ImageContainer = styled.div `
-  background-image: url("https://farm2.static.flickr.com/1232/552451503_42027c4351_b.jpg");
+  ${'' /* background-image: url("https://i.imgur.com/dn9UJ3m.jpg"); */}
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  ${'' /* height: 100vh;
+  width: 100vw; */}
+  image-orientation: center;
   display: flex;
   align-items: center;
+  .git{
+    color:black
+  }
 `;
 const HomeContainer = styled.div `
   text-align: center;
@@ -62,6 +70,8 @@ class Projects extends Component {
   render() {
     return (
 <div><ImageContainer>
+  <Image src='https://i.imgur.com/dn9UJ3m.jpg' width={600} height={800}  />
+
   <HomeContainer>
 
 
@@ -125,6 +135,9 @@ class Projects extends Component {
         </LandingText>
 
       </HomeContainer>
+
+
+<Image src='https://i.imgur.com/M1PGkfI.jpg' width={600} height={800}/>
       </ImageContainer>
     </div>
   );
