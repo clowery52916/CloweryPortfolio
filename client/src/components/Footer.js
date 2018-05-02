@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 const FooterStyle = styled.div`
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   background-color: black;
   color: white;

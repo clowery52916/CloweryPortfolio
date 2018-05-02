@@ -1,79 +1,64 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import {Button, Image } from "semantic-ui-react";
-import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
-import '../App.css'
+import GridExampleCelled2 from "./GridExampleCelled2";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar'
 
 
-const Letters = styled.img`
-  image-resolution: from-image;
-`
-
-
-
-const TextContainer = styled.div`
-    font-family: 'Satisfy', cursive;
-    font-size: 20px;
-    align-items:center;
-`
-const ImageContainer = styled.div `
-  ${'' /* background-image: url("https://i.imgur.com/dn9UJ3m.jpg"); */}
+const LandingImage = styled.div `
+  background-image: url("https://images.unsplash.com/photo-1513005862547-c6071dd39fa9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd31a4d729941131c32432fffb7e1bf3&auto=format&fit=crop&w=3000&q=1000&h=1600");
   background-size: cover;
   background-repeat: no-repeat;
-  ${'' /* height: 100vh;
-  width: 100vw; */}
-  image-orientation: center;
-  display: flex;
-  align-items: center;
-  .git{
-    color:black
-  }
+  overflow: scroll;
 `;
 const HomeContainer = styled.div `
   text-align: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  color: black;
-  align-items: center;
+  ${'' /* overflow-y: scroll;
+  background-color: black;
+  color: hsl(353, 28%, 63%); */}
+  color:white;
+
 `;
 
 const LandingText = styled.div `
-  margin:margin-left
+margin-right: auto;
+  padding: 100px;
   text-align: center;
-  color: vec3(1.0, 1.0, 1.0);
-  border-radius: 1px;
-  padding: 20px;
   font-family: 'Satisfy', cursive;
   font-size: 20px;
-  object-fit: contain;
-    align-items: center;
-a {
-  color: black;
+  color: white;
+float:right;
+
+h2, a {
+  color: white;
   text-decoration: none;
 }
 `;
+const LandingSubText = styled.div `
+margin-left: auto;
+  padding: 100px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  color: white;
+float: left;
 
+`
 const BodyContent = styled.div `
   width: 75vw;
   height: 100vh;
   text-align: center;
   margin: 20px auto;
-  color: white;
-  text-decoration: none;
-    align-items: center;
 
 `;
 
 class Projects extends Component {
 
   render() {
-    return (
-<div><ImageContainer>
-  <Image src='https://i.imgur.com/dn9UJ3m.jpg' width={600} height={800}  />
-
-  <HomeContainer>
-
+    return (<HomeContainer>
+      <LandingImage>
 
         <LandingText>
           <h1>My Work</h1>
@@ -86,11 +71,11 @@ class Projects extends Component {
           <br/>
 
           <a href='https://squadboxfacialapp.herokuapp.com/'>SquadBox</a>      </h4>
-
+    </LandingText>
 <br/>
-          <TextContainer>
+<LandingSubText>
           <h1>Tech Stack</h1>
-          </TextContainer>
+
           <div>
             <div>
               <Image alt='react logo' src='https://spin.atomicobject.com/wp-content/uploads/20171016145535/ReactJS.png' height={50} width={150}/> {/* //AngularJS: 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w800-h800/AngularJS-Shield-large.png', */}
@@ -132,15 +117,11 @@ class Projects extends Component {
           <span>{' '}</span>
           <span>{' '}</span>
           <span>{' '}</span>
-        </LandingText>
-
-      </HomeContainer>
+          </LandingSubText>
 
 
-<Image src='https://i.imgur.com/M1PGkfI.jpg' width={600} height={800}/>
-      </ImageContainer>
-    </div>
-  );
+      </LandingImage>
+    </HomeContainer>);
   }
 }
 
