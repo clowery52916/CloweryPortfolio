@@ -16,7 +16,7 @@ const FooterStyle = styled.div`
   z-index: 1;
   margin-right: 20px;
     border-top: .9px solid white;
-    font-family: 'Satisfy', cursive;
+    font-family: 'The Girl Next Door', cursive;
   a {
   color: white;
     margin: auto;
@@ -35,12 +35,12 @@ class Footer extends Component {
     return (
       <div>
         <FooterStyle>
-          <h2> ©</h2><span>2018</span>
+          <h2> ©</h2><h3>2018</h3>
           <SocialIcon url="https://www.linkedin.com/in/courtney-lowery52916" />
             <SocialIcon className='git' url="https://github.com/clowery52916" color='white'/>
               <SocialIcon url="https://mail.google.com/mail/u/0/"/>
                 <SocialIcon  url="https://twitter.com/Clowery5183"/>
-          <h4>Atlanta, GA</h4>
+          <h3>Atlanta, GA</h3>
         </FooterStyle>
       </div>
     );

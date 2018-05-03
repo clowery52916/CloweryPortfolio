@@ -11,6 +11,7 @@ const LandingImage = styled.div `
   background-image: url("https://www.walldevil.com/wallpapers/w05/colorful-smoke-black-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  image-resolution: from-image;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -22,6 +23,7 @@ const HomeContainer = styled.div `
   background-color: black;
   color: hsl(353, 28%, 63%);
 
+
 `;
 
 const LandingText = styled.div `
@@ -30,8 +32,8 @@ const LandingText = styled.div `
   color: vec3(1.0, 1.0, 1.0);
   border-radius: 1px;
   padding: 20px;
-  font-family: 'Satisfy', cursive;
-  font-size: 20px;
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
 h2 {
   color: white;
 }

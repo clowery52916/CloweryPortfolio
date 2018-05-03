@@ -24,7 +24,8 @@ flex: 1 0 auto;
 z-index: 1;
 margin-right: 20px;
   border-bottom: .9px solid white;
-  font-family: 'Satisfy', cursive;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 22px;
 a {
 color: white;
   margin: auto;
@@ -55,9 +56,9 @@ class Navbar extends Component {
       <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'>
       {/* <Logo src='https://i.imgur.com/AT6oyJl.jpg' alt='logo'> */}
   </Logo> {/* site name goes here */}
-      <Flash>
+      {/* <Flash>
         <h3>Website under construction</h3>
-      </Flash>
+      </Flash> */}
       <div>
 
         <LinkContainer>
