@@ -15,9 +15,9 @@ const Logo = styled.img `
 const Nav = styled.div `
 height: 10vh;
 width: 100vw;
-${'' /* background: -webkit-linear-gradient(#faff00, #ff0036);
+background: -webkit-linear-gradient(#faff00, #ff0036);
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent; */}
+-webkit-text-fill-color: transparent;
 ${'' /* display: flex; */}
 ${'' /* justify-content: space-between; */}
 align-items: center;
@@ -51,7 +51,7 @@ display: flex;
 class Navbar extends Component {
   render() {
     return (<Nav>
-      <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'/>
+      {/* <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'/> */}
       <div class="circle">
         <div class="content">
         <Link to="/">Home</Link>

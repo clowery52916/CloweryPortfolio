@@ -51,7 +51,7 @@ body {
   /* display:none; */
   position: absolute;
   top: 5px;
-  right: 30px;
+  right: 45px;
   z-index: 800;
   background: #f49b21;
   border-radius: 50%;
@@ -67,7 +67,7 @@ body {
 .content {
   position: relative;
   top: 5px;
-  right: .2px;
+
   width: 60px;
   text-align: center;
   -webkit-animation-name: fadeIn;
@@ -84,8 +84,8 @@ body {
   top: .1px;
   right: .1px;
   z-index: 799;
-  height: 110px;
-  width: 110px;
+  height: 150px;
+  width: 150px;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: .2s;
