@@ -12,7 +12,12 @@ const LandingImage = styled.img `
 `;
 
 const Main = styled.div`
-  
+  background-image: url('https://ak7.picdn.net/shutterstock/videos/13665977/thumb/4.jpg?i10c=img.resize(height:160)');
+background-size: cover;
+width:100vw;
+height:100vh;
+  background-repeat: no-repeat;
+
 `
 
 class Resume extends Component {

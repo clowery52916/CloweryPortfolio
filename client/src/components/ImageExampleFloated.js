@@ -1,28 +1,8 @@
-// import React from 'react'
-// import { Grid, Image } from 'semantic-ui-react'
-//
-// const GridExampleColumnWidth = () => (
-//   <Grid>
-//     <Grid.Column width={4}>
-//
-//     </Grid.Column>
-//
-//     <Grid.Column width={9}>
-//       <Image src='/assets/images/wireframe/paragraph.png' />
-//     </Grid.Column>
-//     <Grid.Column width={3}>
-//       <Image src='/assets/images/wireframe/media-paragraph.png' />
-//     </Grid.Column>
-//   </Grid>
-// )
-//
-//   <Image src=''/>
-//
-// export default GridExampleColumnWidth
-
 import React from 'react'
 import {Segment, Image} from 'semantic-ui-react'
 import styled from 'styled-components'
+import NavBar from './NavBar'
+import Footer from './Footer'
 
 const ImageOne = styled.img `
   height: 100%;
@@ -36,13 +16,19 @@ const HeadingConatiner = styled.div `
 h1{
   text-align: center
   font-family: 'Cookie', cursive;
+  background: -webkit-linear-gradient(#db9aee, #85c1c9);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 
 }
 `
 const BodyContainer = styled.div `
   font-family: 'The Girl Next Door', cursive;
-    background-image: url(https://images.unsplash.com/photo-1512919436013-a21528d410e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d87bc5001014a7b5bae8af2b8fc5a8d7&auto=format&fit=crop&w=600&q=80);
-    color:white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black;
+    font-weight: bold;
     text-align: center;
     span{
       font-size: 8px;
@@ -50,48 +36,56 @@ const BodyContainer = styled.div `
     h4{
       font-family: 'Cookie', cursive;
       font-size: 25px;
+      background: -webkit-linear-gradient(#ed5885, #eef64c);
+      -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 
     }
 
 
 `
 const Main = styled.div `
-  background-color:black;
     height: 100%;
 `
 
-const ImageExampleFloated = () => (<Main>
-  <Segment>
+
+
+const ImageExampleFloated = () => (  <div>
+  <Main>
+
+
     <ImageOne src='https://i.imgur.com/7TQHKlD.jpg'/>
     <BodyContainer>
-  <br/>
+
+      <br/>
       <HeadingConatiner>
+
         <h1>Why, Hello</h1>
         <h3>I am a full-stack Software Developer</h3>
       </HeadingConatiner>
       <h4>Who am I?</h4>
       <p>
-        Hello there, I'm Courtney! I am a curious developer with a passion for learning. I love my life, I love to travel,
-        I love my husband, and most of all, I want to make the world a better place through technology.<br/>
-        I am a beer connoisseur. I enjoy going to beer festivals with my husband in my spare time along with shows at The Fox, concerts, movies, and going on new adventures. I love to create things, whether it be in the development world, or in my own backyard. I have a passion for building things, refinishing old furniture and just creating something unique.
-        I am also an avid animal lover and nature lover! This is my prettiest girl, Roxy.</p>
+        Hello there, I'm Courtney! I am a curious developer with a passion for learning. I love my life, I love to travel, I love my husband, and most of all, I want to make the world a better place through technology.<br/>
+        I am a beer connoisseur. I enjoy going to beer festivals with my husband in my spare time along with shows at The Fox, concerts, movies, and going on new adventures. I love to create things, whether it be in the development world, or in my own backyard. I have a passion for building things, refinishing old furniture and just creating something unique. I am also an avid animal lover and nature lover! This is my prettiest girl, Roxy.</p>
       <Image src='https://i.imgur.com/YWNzG7Rt.jpg' size='small'/><br/>
       <span>(Is she not the cutest pup you have ever seen!)</span>
       <br/>
       <h4>Who am I as a developer?</h4>
       <p>
-        I thoroughly enjoy back-end development, but I am proficient on the front-end side as well. I really love
-        problem solving and breaking things down step by step.
-        I love being a part of an industry that is a team. I love knowing that if there is a problem I am having trouble solving, someone has been there before me, and are always more than willing to guide me in the right direction. Currently I am using my skills as a developer, building websites for non-profit organizations, while working on some of my own passion projects. Please feel free to check them out on my project page. They are still a work in progress, but I am so excited to be building them and hope to make them into something truly amazing.
-      <br/>  I am looking for a full-time position with a company that I can call my forever home, so if you are interested and think I may be a good fit for your team, please reach out! I would love to hear from you. I am also willing to have a mentor, or work on some projects with my fellow devs, so if there is anything I can help with, give me a call!
+        I thoroughly enjoy back-end development, but I am proficient on the front-end side as well. I really love problem solving and breaking things down step by step. I love being a part of an industry that is a team. I love knowing that if there is a problem I am having trouble solving, someone has been there before me, and are always more than willing to guide me in the right direction. Currently I am using my skills as a developer, building websites for non-profit organizations, while working on some of my own passion projects. Please feel free to check them out on my project page. They are still a work in progress, but I am so excited to be building them and hope to make them into something truly amazing.
+        <br/>
+        I am looking for a full-time position with a company that I can call my forever home, so if you are interested and think I may be a good fit for your team, please reach out! I would love to hear from you. I am also willing to have a mentor, or work on some projects with my fellow devs, so if there is anything I can help with, give me a call!
         <br/>Thank you so much for visiting! I hope to hear from you soon! Have an amazing day!!
       </p>
       <h6>If you are a non-profit organization, in need of a developer, please email me or call me to discuss how I may be of service.
       </h6>
-
       {/* <ImageThree src='https://i.imgur.com/QDOBXiV.jpg' size='small' floated='right' /> */}
+
     </BodyContainer>
-  </Segment>
-</Main>)
+
+</Main>
+</div>
+
+)
 
 export default ImageExampleFloated

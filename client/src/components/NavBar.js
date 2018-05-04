@@ -15,31 +15,30 @@ const Logo = styled.img `
 const Nav = styled.div `
 height: 10vh;
 width: 100vw;
-background-color: black;
-color: white;
-display: flex;
-justify-content: space-between;
+${'' /* background: -webkit-linear-gradient(#faff00, #ff0036);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */}
+${'' /* display: flex; */}
+${'' /* justify-content: space-between; */}
 align-items: center;
-flex: 1 0 auto;
-z-index: 1;
-margin-right: 20px;
+
+
   border-bottom: .9px solid white;
   font-family: 'The Girl Next Door', cursive;
-  font-size: 22px;
+  font-size: 8px;
 a {
-color: white;
-  margin: auto;
+color: black;
     text-decoration: none;
 }
 `;
 
 const LinkContainer = styled.div `
-  display: flex;
-  margin-right: 10px;
+
+
 `;
 
 const LinkMargin = styled.div `
-  margin: 10px;
+
 
 `;
 
@@ -52,33 +51,20 @@ display: flex;
 class Navbar extends Component {
   render() {
     return (<Nav>
-      {/* https://www.designfreelogoonline.com/wp-content/uploads/2014/12/00574-Industry-Gear-logo-design-free-logos-online-01.png */}
-      <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'>
-      {/* <Logo src='https://i.imgur.com/AT6oyJl.jpg' alt='logo'> */}
-  </Logo> {/* site name goes here */}
-      {/* <Flash>
-        <h3>Website under construction</h3>
-      </Flash> */}
-      <div>
+      <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'/>
+      <div class="circle">
+        <div class="content">
+        <Link to="/">Home</Link>
+        <br/>
+        <Link to="/projects">Projects</Link>
+        <br/>
+            <Link to='/about' > About</Link>
+            <br/>
+        <Link to='resume'>Resume</Link>
 
-        <LinkContainer>
-          <LinkMargin>
-            <Link to="/">Home</Link>
-          </LinkMargin>
-          <LinkMargin>
-            <Link to="/projects">Projects</Link>
-            {/* link to map page */}
-          </LinkMargin>
-          <LinkMargin>
-                <Link to='/about' > About</Link>
-          </LinkMargin>
-          <LinkMargin>
-            <Link to='resume'>
-              Resume</Link>
-          </LinkMargin>
-        </LinkContainer>
-
-      </div>
+  </div>
+</div>
+<img class="splatter" src="http://static.indigoimages.ca/2015/shop/orange-paint-splatter.png"/>
     </Nav>);
   }
 }

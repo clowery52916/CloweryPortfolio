@@ -5,6 +5,7 @@ import GridExampleCelled2 from "./GridExampleCelled2";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar'
+import { Zoom } from 'react-slideshow-image';
 
 const LandingImage = styled.div `
   background-image: url("https://images.unsplash.com/photo-1513005862547-c6071dd39fa9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd31a4d729941131c32432fffb7e1bf3&auto=format&fit=crop&w=2800&q=1000&h=1500");
@@ -13,6 +14,9 @@ const LandingImage = styled.div `
   overflow: scroll;
   h1{
   font-family: 'Cookie', cursive;
+  background: -webkit-linear-gradient(#9a7aa4, #e9cbf5);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
   }
 `;
 const HomeContainer = styled.div `
@@ -31,7 +35,9 @@ margin-right: auto;
   font-family: 'The Girl Next Door', cursive;
   font-size: 20px;
   color: white;
-float:right;
+  float:right;
+
+
 
 h2, a {
   color: white;
@@ -57,15 +63,24 @@ const BodyContent = styled.div `
 
 `;
 
+
 class Projects extends Component {
 
   render() {
+    const images = [
+      'https://i.imgur.com/7vBKuOs.jpg?3',
+      'images/slide_4.jpg',
+      'images/slide_5.jpg',
+      'images/slide_6.jpg',
+      'images/slide_7.jpg',
+
+    ];
     return (<HomeContainer>
       <LandingImage>
 
         <LandingText>
           <h1>My Work</h1>
-          <h4>
+          {/* <h4>
             <a href='https://drinkdriver.herokuapp.com/'>Drink Driver</a>
             <br/>
             <Image src='https://i.imgur.com/tkWVz1vt.png' alt='drinkdriver homepage'/>
@@ -74,7 +89,14 @@ class Projects extends Component {
             <a href='https://squadboxfacialapp.herokuapp.com/'>SquadBox</a>
             <br/>
             <Image src='https://i.imgur.com/biORAqqt.png' alt='squadbox homepage'/>
-          </h4>
+          </h4> */}
+        <Zoom className='tech'
+          images={images}
+          scale="5.9"
+          duration={5000}
+          transitionDuration={1000}
+        />
+
         </LandingText>
         <br/>
         <LandingSubText>

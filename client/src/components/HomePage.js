@@ -5,35 +5,44 @@ import GridExampleCelled2 from "./GridExampleCelled2";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar'
-
+import Footer from './Footer'
 
 const LandingImage = styled.div `
-  background-image: url("https://www.walldevil.com/wallpapers/w05/colorful-smoke-black-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  image-resolution: from-image;
-  height: 100vh;
-  width: 100vw;
+${'' /* image-resolution: from-image;
+background-image: url('https://i.imgur.com/iam2x4s.jpg');
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+width: 100vw; */}
   display: flex;
   overflow: scroll;
 `;
 const HomeContainer = styled.div `
   text-align: center;
   overflow-y: scroll;
-  background-color: black;
-  color: hsl(353, 28%, 63%);
-
+  ${'' /* background-color: white;
+ font-size: 40px;
+ background-image: url("https://i.imgur.com/IqtsOVh.jpg");
+ background-size: auto;
+ background-position: center; */}
+ height: 100vh;
+ width: 100vw;
+ background-color: white4
+ background-repeat: no-repeat;
 
 `;
 
 const LandingText = styled.div `
-  margin:margin-left
+  margin:margin-left;
   text-align: center;
-  color: vec3(1.0, 1.0, 1.0);
+  color:
   border-radius: 1px;
-  padding: 20px;
+  padding: 40px;
   font-family: 'Cookie', cursive;
-  font-size: 40px;
+  font-size: 36px;
+ background: -webkit-linear-gradient(#faff00, #ff0036);
+ -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 h2 {
   color: white;
 }
@@ -43,7 +52,7 @@ margin-left: auto;
   padding: 100px;
   text-align: center;
   font-family: 'Satisfy', cursive;
-  font-size: 20px;
+  font-size: 40px;
   color: white;
 
 `
@@ -59,17 +68,29 @@ class HomePage extends Component {
 
   render() {
     return (<HomeContainer>
+
+      <div class="video-background">
+    <div class="video-foreground">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/pGbIOC83-So?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=pGbIOC83-So" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    </div>
+    </div>
+
+    <div id="vidtop-content">
+    <div class="vid-info">
       <LandingImage>
         <Fade left="left">
           <LandingText>
             <h1>
-              Let's make something beautiful,<br/>
-              together.
+              Let's make something beautiful....<br/> together
             </h1>
 
           </LandingText>
         </Fade>
       </LandingImage>
+
+    </div>
+    </div>
     </HomeContainer>);
   }
 }
