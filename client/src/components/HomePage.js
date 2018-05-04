@@ -27,7 +27,6 @@ const HomeContainer = styled.div `
  background-position: center; */}
  height: 100vh;
  width: 100vw;
- background-color: white4
  background-repeat: no-repeat;
 
 `;
@@ -35,7 +34,6 @@ const HomeContainer = styled.div `
 const LandingText = styled.div `
   margin:margin-left;
   text-align: center;
-  color:
   border-radius: 1px;
   padding: 40px;
   font-family: 'Cookie', cursive;
@@ -72,10 +70,8 @@ class HomePage extends Component {
       <div class="video-background">
     <div class="video-foreground">
       <iframe width="854" height="480" src="https://www.youtube.com/embed/pGbIOC83-So?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=pGbIOC83-So" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
     </div>
     </div>
-
     <div id="vidtop-content">
     <div class="vid-info">
       <LandingImage>
@@ -84,11 +80,9 @@ class HomePage extends Component {
             <h1>
               Let's make something beautiful....<br/> together
             </h1>
-
           </LandingText>
         </Fade>
       </LandingImage>
-
     </div>
     </div>
     </HomeContainer>);

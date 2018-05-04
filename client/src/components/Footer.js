@@ -17,7 +17,6 @@ const FooterStyle = styled.div`
   flex: 1 0 auto;
   z-index: 1;
   margin-right: 20px;
-    border-top: .9px solid white;
     font-family: 'The Girl Next Door', cursive;
   a {
   color: white;
@@ -39,7 +38,7 @@ class Footer extends Component {
         <FooterStyle>
           <h2> ©</h2><h3>2018</h3>
           <SocialIcon url="https://www.linkedin.com/in/courtney-lowery52916" />
-            <SocialIcon className='git' url="https://github.com/clowery52916" color='white'/>
+            <SocialIcon className='git' url="https://github.com/clowery52916" color='black'/>
               <SocialIcon url="https://mail.google.com/mail/u/0/"/>
                 <SocialIcon  url="https://twitter.com/Clowery5183"/>
           <h3>Atlanta, GA</h3>

@@ -12,10 +12,10 @@ const LandingImage = styled.img `
 `;
 
 const Main = styled.div`
-  background-image: url('https://ak7.picdn.net/shutterstock/videos/13665977/thumb/4.jpg?i10c=img.resize(height:160)');
-background-size: cover;
-width:100vw;
-height:100vh;
+  background-image: url(https://media.istockphoto.com/photos/paint-splash-on-a-white-background-picture-id578561164?k=6&m=578561164&s=612x612&w=0&h=ZaghNzVXkcTQmoByFzmfHoSZJF1Tx8jlUr3yKVS9T-o=);
+  background-size: cover;
+  width:100vw;
+  height:100vh;
   background-repeat: no-repeat;
 
 `
@@ -25,10 +25,6 @@ class Resume extends Component {
   render() {
     return (<div >
       <Main>
-
-      {/* <Image src='https://i.imgur.com/QDOBXiV.jpg' width={400} height={400} alt='picture of me'/>
-    <div>About me lksdlkajsljdalkjsldjaljsss</div> */
-      }
       <LandingImage src='https://i.imgur.com/CKOE7MN.jpg' width={700} alt='resume'/>
 </Main>
     </div>);

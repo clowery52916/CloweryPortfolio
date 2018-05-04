@@ -5,11 +5,13 @@ import GridExampleCelled2 from "./GridExampleCelled2";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import NavBar from './NavBar'
-import { Zoom } from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
+import Slider from 'react-styled-carousel';
 
 const LandingImage = styled.div `
-  background-image: url("https://images.unsplash.com/photo-1513005862547-c6071dd39fa9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd31a4d729941131c32432fffb7e1bf3&auto=format&fit=crop&w=2800&q=1000&h=1500");
-  background-size: cover;
+  ${'' /* background-image: url("https://images.unsplash.com/photo-1513005862547-c6071dd39fa9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd31a4d729941131c32432fffb7e1bf3&auto=format&fit=crop&w=2800&q=1000&h=1500");
+  background-size: cover; */}
+  display: flex;
   background-repeat: no-repeat;
   overflow: scroll;
   h1{
@@ -29,7 +31,7 @@ const HomeContainer = styled.div `
 `;
 
 const LandingText = styled.div `
-margin-right: auto;
+  margin: auto;
   padding: 100px;
   text-align: center;
   font-family: 'The Girl Next Door', cursive;
@@ -46,14 +48,31 @@ h2, a {
 
 `;
 const LandingSubText = styled.div `
-margin-left: auto;
+  float: right;
+  margin:right;
   padding: 100px;
   text-align: center;
   font-family: 'Vibur', cursive;
   font-size: 20px;
   color: white;
-float: left;
 
+
+`
+const Plug = styled.div `
+  margin: right;
+  padding: 100px;
+  text-align: center;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 20px;
+  color: white;
+  float:right;
+
+
+
+h2, a {
+  color: white;
+  text-decoration: none;
+}
 `
 const BodyContent = styled.div `
   width: 75vw;
@@ -69,13 +88,20 @@ class Projects extends Component {
   render() {
     const images = [
       'https://i.imgur.com/7vBKuOs.jpg?3',
-      'images/slide_4.jpg',
+      'https://i.imgur.com/4Z70NZB.jpg?3',
       'images/slide_5.jpg',
       'images/slide_6.jpg',
       'images/slide_7.jpg',
 
     ];
     return (<HomeContainer>
+      <div class="video-background">
+    <div class="video-foreground">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/8Tek4JeBQIw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=8Tek4JeBQIw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div id="vidtop-content">
+    <div class="vid-info">
       <LandingImage>
 
         <LandingText>
@@ -90,17 +116,26 @@ class Projects extends Component {
             <br/>
             <Image src='https://i.imgur.com/biORAqqt.png' alt='squadbox homepage'/>
           </h4> */}
-        <Zoom className='tech'
-          images={images}
-          scale="5.9"
-          duration={5000}
-          transitionDuration={1000}
-        />
+          <div class="squad">
+      	  <a href="https://squadboxfacialapp.herokuapp.com/">
+      		    <span>SquadBox
+            </span>
+      	  </a>
+          </div>
+          <br/>
+          <div class='dd'>
+          <a href="https://drinkdriver.herokuapp.com/">
+             <span>DrinkDriver
+            </span>
+         </a>
+         <br/>
+         <br/>
+      </div>
 
         </LandingText>
-        <br/>
         <LandingSubText>
           <h1>Tech Stack</h1>
+          <br/>
           <div>
             <div>
               <Image alt='react logo' src='https://spin.atomicobject.com/wp-content/uploads/20171016145535/ReactJS.png' height={50} width={150}/> {/* //AngularJS: 'https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w800-h800/AngularJS-Shield-large.png', */}
@@ -142,7 +177,18 @@ class Projects extends Component {
           <span>{' '}</span>
           <span>{' '}</span>
         </LandingSubText>
+        <Plug>
+          <h1>Genba On The Go</h1>
+          <Slider>
+   <Image src='https://i.imgur.com/4Z70NZB.jpg?3'>1</Image>
+   <Image src='https://drinkdriver.herokuapp.com/'>2</Image>
+   <Image>3</Image>
+   <Image>4</Image>
+ </Slider>
+        </Plug>
       </LandingImage>
+    </div>
+  </div>
     </HomeContainer>);
   }
 }
