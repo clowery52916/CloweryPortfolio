@@ -51,8 +51,8 @@ h2, a {
 
 `;
 const LandingSubText = styled.div `
-  float: right;
-  margin:right;
+  float: left;
+  margin:left;
   padding: 100px;
   text-align: center;
   font-family: 'Vibur', cursive;
@@ -72,8 +72,6 @@ const Plug = styled.div `
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float:right;
-
-
 
 h2, a {
   background: -webkit-linear-gradient(#faff00, #ff0036);
@@ -104,115 +102,22 @@ class Projects extends Component {
           <h1>My Work</h1>
             <Carousel autoPlay>
               <div>
-                <img src="https://i.imgur.com/7vBKuOs.jpg?3" />
+                <img src="https://i.imgur.com/3aXvpY1m.jpg" />
                 <a href="https://drinkdriver.herokuapp.com/">
                 <p className="legend">Drink Driver</p>
               </a>
               </div>
               <div>
-                <img src="https://i.imgur.com/4Z70NZB.jpg" />
+                <img src="https://i.imgur.com/DDBA5mdm.jpg" />
                   <a href="https://squadboxfacialapp.herokuapp.com/">
                 <p className="legend">SquadBox</p>
               </a>
               </div>
-              {/* <div>
-                <img src="https://i.imgur.com/NsNcK8Tm.jpg" />
-                <p className="legend">Certification Letter</p>
-              </div> */}
-              {/* <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
-                <p className="legend">Legend 3</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
-                <p className="legend">Legend 4</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
-                <p className="legend">Legend 5</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
-                <p className="legend">Legend 6</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" />
-                <p className="legend">Legend 7</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" />
-                <p className="legend">Legend 8</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" />
-                <p className="legend">Legend 9</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg" />
-                <p className="legend">Legend 10</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-11.jpg" />
-                <p className="legend">Legend 11</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-12.jpg" />
-                <p className="legend">Legend 12</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-13.jpg" />
-                <p className="legend">Legend 13</p>
-              </div>
-              <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-14.jpg" />
-                <p className="legend">Legend 14</p>
-              </div> */}
             </Carousel>
           );
 
-
-
-          {/* <h4>
-            <a href='https://drinkdriver.herokuapp.com/'>Drink Driver</a>
-            <br/>
-            <Image src='https://i.imgur.com/tkWVz1vt.png' alt='drinkdriver homepage'/>
-          </h4>
-          <h4>
-            <a href='https://squadboxfacialapp.herokuapp.com/'>SquadBox</a>
-            <br/>
-            <Image src='https://i.imgur.com/biORAqqt.png' alt='squadbox homepage'/>
-          </h4> */}
-          {/* <Carousel>
-                <div>
-                    <img src="https://i.imgur.com/tkWVz1vt.png" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="https://i.imgur.com/biORAqqt.png" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel> */}
-          {/* <div class="squad">
-      	  <a href="https://squadboxfacialapp.herokuapp.com/">
-      		    <span>SquadBox
-            </span>
-      	  </a>
-          </div>
-          <br/>
-          <div class='dd'>
-          <a href="https://drinkdriver.herokuapp.com/">
-             <span>DrinkDriver
-            </span>
-         </a>
-         <br/>
-         <br/>
-      </div> */}
-
         </LandingText>
+
         <LandingSubText>
           <h1>Tech Stack</h1>
           <br/>
@@ -257,61 +162,6 @@ class Projects extends Component {
           <span>{' '}</span>
           <span>{' '}</span>
         </LandingSubText>
-        <Plug>
-          <h1>Genba On The Go</h1>
-          <Carousel autoPlay>
-            {/* <div>
-              <img src="https://i.imgur.com/NwVBd1St.jpg" />
-
-              <p className="legend">Binder</p>
-            </div> */}
-            <div>
-              <img src="https://i.imgur.com/SPKxdaMm.jpg" />
-              <p className="legend">First Page</p>
-            </div>
-            <div>
-              <img src="https://i.imgur.com/VY1f3Ebm.jpg" />
-              <p className="legend">Legend 4</p>
-            </div>
-            <div>
-              <img src="https://i.imgur.com/OKcgSg9m.jpg" />
-              <p className="legend">Legend 9</p>
-            </div>
-
-            {/* <div>
-              <img src="https://i.imgur.com/9vZjqy3m.jpg" />
-              <p className="legend">Legend 7</p>
-            </div> */}
-
-            {/*
-
-
-
-
-
-
-
-
-
-
-            <div>
-              <img src="https://i.imgur.com/uyGSGXam.jpg" />
-              <p className="legend">Legend 14</p>
-            </div>
-            <div>
-              <img src="https://i.imgur.com/gQxBJWQm.jpg" />
-              <p className="legend">Legend 14</p>
-            </div>
-            <div>
-              <img src="https://i.imgur.com/arpHBItm.jpg" />
-              <p className="legend">Legend 14</p>
-            </div>
-            <div>
-              <img src="https://i.imgur.com/epZyhNXm.jpg" />
-              <p className="legend">Legend 14</p>
-            </div> */}
-          </Carousel>
-        </Plug>
       </LandingImage>
     </HomeContainer>);
   }

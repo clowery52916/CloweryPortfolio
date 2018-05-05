@@ -40,7 +40,10 @@ class Navbar extends Component {
           <span>{' '}</span>
           <Link to="/projects">Projects</Link>
           <span>{' '}</span>
-          <Link to='resume'>Resume</Link>
+          <Link to='resume'>Résumé</Link>
+          <span>{' '}</span>
+          {/* <Link to='genba-on-the-go'>Scrum</Link> */}
+
 
         </div>
       </div>
