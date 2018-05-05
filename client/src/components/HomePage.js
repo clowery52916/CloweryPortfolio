@@ -8,23 +8,12 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 
 const LandingImage = styled.div `
-${'' /* image-resolution: from-image;
-background-image: url('https://i.imgur.com/iam2x4s.jpg');
-background-position: center;
-background-repeat: no-repeat;
-height: 100vh;
-width: 100vw; */}
   display: flex;
   overflow: scroll;
 `;
 const HomeContainer = styled.div `
   text-align: center;
   overflow-y: scroll;
-  ${'' /* background-color: white;
- font-size: 40px;
- background-image: url("https://i.imgur.com/IqtsOVh.jpg");
- background-size: auto;
- background-position: center; */}
  height: 100vh;
  width: 100vw;
  background-repeat: no-repeat;

@@ -16,7 +16,7 @@ const HeadingConatiner = styled.div `
 h1{
   text-align: center
   font-family: 'Cookie', cursive;
-  background: -webkit-linear-gradient(#db9aee, #85c1c9);
+  background: -webkit-linear-gradient( #ff0036, #faff00);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 
@@ -28,6 +28,7 @@ const BodyContainer = styled.div `
     background-size: cover;
     background-repeat: no-repeat;
     color:black;
+      background: linear-gradient(to top, rgba(250, 255, 0, .5), rgba(255,0,0,1));
     font-weight: bold;
     text-align: center;
     span{
@@ -36,9 +37,10 @@ const BodyContainer = styled.div `
     h4{
       font-family: 'Cookie', cursive;
       font-size: 25px;
-      background: -webkit-linear-gradient(#ed5885, #eef64c);
+      color: black;
+  ${'' /* background: -webkit-linear-gradient( #faff00, #ff0036 );
       -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent; */}
 
     }
 
