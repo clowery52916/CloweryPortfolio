@@ -9,6 +9,9 @@ const LandingImage = styled.img `
   object-fit: contain;
   display: flex;
   align-items:center;
+  @media (max-width: 320px) {
+     display: none;
+   }
 `;
 
 const Main = styled.div`
@@ -17,6 +20,9 @@ const Main = styled.div`
   width:100vw;
   height:100vh;
   background-repeat: no-repeat;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 `
 

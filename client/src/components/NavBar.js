@@ -13,7 +13,10 @@ const Logo = styled.img `
 
 const Nav = styled.div `
 width: 100vw;
-${ ''/* background: -webkit-linear-gradient(#faff00, #ff0036);
+@media (max-width: 320px) {
+   display: none;
+ }
+${ ''/* background: -webkit-linear-gradient(#faff00, #f437b9);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; */}
 ${ ''/* display: flex; */}

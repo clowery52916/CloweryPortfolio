@@ -7,7 +7,7 @@ import { SocialIcon } from 'react-social-icons';
 const FooterStyle = styled.div`
   height: 8vh;
   width: 100vw;
-  background: -webkit-linear-gradient(#faff00, #ff0036);
+  background: -webkit-linear-gradient(#faff00, #f02e9c);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
   color: white;
@@ -15,15 +15,17 @@ const FooterStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   flex: 1 0 auto;
-  z-index: 1;
-  margin-right: 20px;
+  z-index: 2;
+  @media (max-width: 320px) {
+     display: none;
+   }
     font-family: 'The Girl Next Door', cursive;
   a {
   color: white;
     margin: auto;
       text-decoration: none;
   }
-  h5, h4, h2 {
+  h3, h2 {
     margin: 20px;
   }
   h2{
@@ -40,7 +42,7 @@ class Footer extends Component {
           <SocialIcon url="https://www.linkedin.com/in/courtney-lowery52916" />
             <SocialIcon className='git' url="https://github.com/clowery52916" color='black'/>
               <SocialIcon url="https://mail.google.com/mail/u/0/"/>
-                <SocialIcon  url="https://twitter.com/Clowery5183"/>
+                {/* <SocialIcon  url="https://twitter.com/Clowery5183"/> */}
           <h3>Atlanta, GA</h3>
         </FooterStyle>
       </div>

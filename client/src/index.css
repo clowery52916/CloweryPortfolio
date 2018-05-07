@@ -277,3 +277,4 @@ body {
     box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
+@media screen and (min-width: 480px) 

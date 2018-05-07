@@ -9,46 +9,31 @@ import Footer from './Footer'
 
 const LandingImage = styled.div `
   display: flex;
-  overflow: scroll;
+  @media (max-width: 320px) {
+     display: none;
+   }
 `;
 const HomeContainer = styled.div `
-  text-align: center;
-  overflow-y: scroll;
- height: 100vh;
- width: 100vw;
+  height: 100vh;
+  width: 100vw;
  background-repeat: no-repeat;
-
+ @media (max-width: 320px) {
+    display: none;
+  }
 `;
 
 const LandingText = styled.div `
-  margin:margin-left;
-  text-align: center;
-  border-radius: 1px;
-  padding: 40px;
+
+  width:100vw;
+  padding:10px;
   font-family: 'Cookie', cursive;
   font-size: 36px;
- background: -webkit-linear-gradient(#faff00, #ff0036);
+  background: -webkit-linear-gradient(#faff00, #f02e9c);
  -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 h2 {
   color: white;
 }
-`;
-const LandingSubText = styled.div `
-margin-left: auto;
-  padding: 100px;
-  text-align: center;
-  font-family: 'Satisfy', cursive;
-  font-size: 40px;
-  color: white;
-
-`
-const BodyContent = styled.div `
-  width: 75vw;
-  height: 100vh;
-  text-align: center;
-  margin: 20px auto;
-
 `;
 
 class HomePage extends Component {

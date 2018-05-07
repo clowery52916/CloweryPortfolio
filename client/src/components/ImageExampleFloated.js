@@ -10,16 +10,21 @@ const ImageOne = styled.img `
   float: left;
   padding:none;
   border-collapse: separate;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 `
 const HeadingConatiner = styled.div `
 h1{
   text-align: center
   font-family: 'Cookie', cursive;
-  background: -webkit-linear-gradient( #ff0036, #faff00);
+  background: -webkit-linear-gradient(#f02e9c, #faff00);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
-
+ @media (max-width: 320px) {
+    display: none;
+  }
 }
 `
 const BodyContainer = styled.div `
@@ -28,17 +33,22 @@ const BodyContainer = styled.div `
     background-size: cover;
     background-repeat: no-repeat;
     color:black;
-      background: linear-gradient(to top, rgba(250, 255, 0, .5), rgba(255,0,0,1));
-    font-weight: bold;
     text-align: center;
+    padding: inherit;
+    background: linear-gradient(to top, rgba(250, 255, 0, .5), rgba(240, 46, 156,1));
+    font-weight: bold;
+  justify-content:center;
+  @media (max-width: 320px) {
+     display: none;
+   }
     span{
-      font-size: 8px;
+      font-size: 12px;
     }
     h4{
       font-family: 'Cookie', cursive;
       font-size: 25px;
       color: black;
-  ${'' /* background: -webkit-linear-gradient( #faff00, #ff0036 );
+  ${'' /* background: -webkit-linear-gradient( #faff00, rgb(240, 46, 156));
       -webkit-background-clip: text;
      -webkit-text-fill-color: transparent; */}
 
@@ -62,7 +72,7 @@ const ImageExampleFloated = () => (  <div>
       <br/>
       <HeadingConatiner>
 
-        <h1>Why, Hello</h1>
+        <h1>Hello, there</h1>
         <h3>I am a full-stack Software Developer</h3>
       </HeadingConatiner>
       <h4>Who am I?</h4>

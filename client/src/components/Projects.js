@@ -17,9 +17,12 @@ const LandingImage = styled.div `
   display: flex;
   background-repeat: no-repeat;
   overflow: scroll;
+  @media (max-width: 320px) {
+     display: none;
+   }
   h1{
   font-family: 'Cookie', cursive;
- background: -webkit-linear-gradient(#faff00, #ff0036);
+ background: -webkit-linear-gradient(#faff00, #f02e9c);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
   }
@@ -30,6 +33,9 @@ const HomeContainer = styled.div `
   background-color: black;
   color: hsl(353, 28%, 63%); */}
   color:white;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 `;
 
@@ -41,6 +47,9 @@ const LandingText = styled.div `
   font-size: 20px;
   color: white;
   float:right;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 
 
@@ -57,9 +66,12 @@ const LandingSubText = styled.div `
   text-align: center;
   font-family: 'Vibur', cursive;
   font-size: 20px;
-  background: -webkit-linear-gradient(#faff00, #ff0036);
+  background: -webkit-linear-gradient(#faff00, ##f02e9c);
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 `
 const Plug = styled.div `
@@ -68,13 +80,16 @@ const Plug = styled.div `
   text-align: center;
   font-family: 'The Girl Next Door', cursive;
   font-size: 20px;
-  background: -webkit-linear-gradient(#faff00, #ff0036);
+  background: -webkit-linear-gradient(#faff00, ##f02e9c);
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float:right;
+  @media (max-width: 320px) {
+     display: none;
+   }
 
 h2, a {
-  background: -webkit-linear-gradient(#faff00, #ff0036);
+  background: -webkit-linear-gradient(#faff00, ##f02e9c);
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
@@ -86,7 +101,9 @@ const BodyContent = styled.div `
   height: 100vh;
   text-align: center;
   margin: 20px auto;
-
+  @media (max-width: 320px) {
+     display: none;
+   }
 `;
 
 
