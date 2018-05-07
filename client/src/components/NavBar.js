@@ -31,8 +31,8 @@ class Navbar extends Component {
         <br/>
         <br/>
         <br/>
-        <a className="menu-item" href="/">Home</a>
-        <a  className="menu-item" href="/about">About</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
         <a  className="menu-item" href="/projects">Projects</a>
         <a  className="menu-item" href="/resume">Résumé</a>
         <a  className="menu-item" href="/contact">Contact</a>
