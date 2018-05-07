@@ -42,7 +42,6 @@ class Footer extends Component {
           <SocialIcon url="https://www.linkedin.com/in/courtney-lowery52916" />
             <SocialIcon className='git' url="https://github.com/clowery52916" color='black'/>
               <SocialIcon url="https://mail.google.com/mail/u/0/"/>
-                {/* <SocialIcon  url="https://twitter.com/Clowery5183"/> */}
           <h3>Atlanta,GA</h3>
         </FooterStyle>
       </div>

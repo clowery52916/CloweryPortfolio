@@ -5,14 +5,6 @@ import Flash from 'react-reveal/Flash';
 import SidebarRightSlideOut from './SidebarRightSlideOut'
 import { stack as Menu } from 'react-burger-menu'
 
-
-const Logo = styled.img `
-  max-height: 50px;
-
-
-
-`;
-
 const Nav = styled.div `
 width: 100vw;
 @media (max-width: 320px) {
