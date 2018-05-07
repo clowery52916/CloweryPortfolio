@@ -19,11 +19,15 @@ const HeadingConatiner = styled.div `
 h1{
   text-align: center
   font-family: 'Cookie', cursive;
+  font-size: 40px;
   background: -webkit-linear-gradient(#f02e9c, #faff00);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  @media (max-width: 320px) {
     display: none;
+  }
+  h3{
+font-size:20px;
   }
 }
 `
@@ -72,7 +76,7 @@ const ImageExampleFloated = () => (  <div>
       <br/>
       <HeadingConatiner>
 
-        <h1>Hello, there</h1>
+        <h1>Hello</h1>
         <h3>I am a full-stack Software Developer</h3>
       </HeadingConatiner>
       <h4>Who am I?</h4>
