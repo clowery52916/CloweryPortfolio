@@ -8,6 +8,7 @@ export default class Contact extends Component {
 
   render() {
     return (
+
       <form method="POST">
          <label htmlFor="name">Name</label>
          <input type="text" name="name" />
