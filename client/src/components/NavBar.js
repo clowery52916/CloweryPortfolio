@@ -31,18 +31,18 @@ class Navbar extends Component {
 
 
         <a  onClick={this.showSettings} className="menu-item--small" href=""></a>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
         <span>{' '}</span>
-        <a href='/about'>
-          About</a>
+        <Link to='/about'>
+          About</Link>
         <span>{' '}</span>
-        <a href="/projects">Projects</a>
+        <Link to="/projects">Projects</Link>
         <span>{' '}</span>
-        <a href='resume'>Résumé</a>
+        <Link to='resume'>Résumé</Link>
         {/* <span>{' '}</span>
-        <a href='genba-on-the-go'>Scrum</a> */}
+        <a to='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <a href='calendar'>Calendar</a>
+        <Link to='calendar'>Calendar</Link>
       </Menu>
     </Nav>);
   }
