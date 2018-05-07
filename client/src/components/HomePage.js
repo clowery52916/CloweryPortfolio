@@ -28,6 +28,7 @@ const LandingText = styled.div `
   padding:10px;
   font-family: 'Cookie', cursive;
   font-size: 36px;
+  text-align:center;
   background: -webkit-linear-gradient(#faff00, #f02e9c);
  -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -41,15 +42,15 @@ class HomePage extends Component {
   render() {
     return (<HomeContainer>
 
-      <div class="video-background">
-    <div class="video-foreground">
-      <iframe width="854" height="480" src="https://www.youtube.com/embed/pGbIOC83-So?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=pGbIOC83-So" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div className="video-background">
+    <div className="video-foreground">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/pGbIOC83-So?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=pGbIOC83-So" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </div>
     </div>
     <div id="vidtop-content">
-    <div class="vid-info">
+    <div className="vid-info">
       <LandingImage>
-        <Fade left="left">
+        <Fade top="top">
           <LandingText>
             <h1>
               Let's make something beautiful....<br/> together

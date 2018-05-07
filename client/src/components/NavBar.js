@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Flash from 'react-reveal/Flash';
 import SidebarRightSlideOut from './SidebarRightSlideOut'
+import { stack as Menu } from 'react-burger-menu'
+
 
 const Logo = styled.img `
   max-height: 50px;
@@ -16,9 +18,9 @@ width: 100vw;
 @media (max-width: 320px) {
    display: none;
  }
-${ ''/* background: -webkit-linear-gradient(#faff00, #f437b9);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */}
+${'' /* // ${ ''/* background: -webkit-linear-gradient(#faff00, #f437b9);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent; */} */}
 ${ ''/* display: flex; */}
 ${ ''/* justify-content: space-between; */}
 align-items: center;
@@ -33,8 +35,20 @@ color: black;
 class Navbar extends Component {
   render() {
     return (<Nav>
+      <Menu>
+        <br/>
+        <br/>
+        <br/>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/projects">Projects</a>
+        <a id="contact" className="menu-item" href="/resume">Résumé</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <a id="contact" className="menu-item" href="/genba-on-the-go">Genab On The Go</a>
+        <a onClick={ this.showSettings } className="menu-item--small" href=""></a>
+      </Menu>
       {/* <Logo src='https://i.imgur.com/Uyyc0sI.jpg' alt='logo'/> */}
-      <div class="circle">
+      {/* <div class="circle">
         <div class="content">
           <Link to="/">Home</Link>
           <span>{' '}</span>
@@ -44,13 +58,13 @@ class Navbar extends Component {
           <Link to="/projects">Projects</Link>
           <span>{' '}</span>
           <Link to='resume'>Résumé</Link>
-          <span>{' '}</span>
+          <span>{' '}</span> */}
           {/* <Link to='genba-on-the-go'>Scrum</Link> */}
 
 
-        </div>
+        {/* </div>
       </div>
-      <img class="splatter" src="http://static.indigoimages.ca/2015/shop/orange-paint-splatter.png"/>
+      <img class="splatter" src="http://static.indigoimages.ca/2015/shop/orange-paint-splatter.png"/> */}
     </Nav>);
   }
 }
