@@ -39,8 +39,8 @@ class Navbar extends Component {
         <a href="/projects">Projects</a>
         <span>{' '}</span>
         <a href='resume'>Résumé</a>
-        <span>{' '}</span>
-        <a href='genba-on-the-go'>Scrum</a>
+        {/* <span>{' '}</span>
+        <a href='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
         <a href='calendar'>Calendar</a>
       </Menu>
