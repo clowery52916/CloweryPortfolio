@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const TextContainer = styled.div`
-    font-family: 'Satisfy', cursive;
+    font-family: 'Cookie', cursive;
 `
 const GridExampleCelled2 = () => (
   <Grid celled stackable>

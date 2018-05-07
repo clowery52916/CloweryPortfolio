@@ -17,7 +17,7 @@ ${ ''/* display: flex; */}
 ${ ''/* justify-content: space-between; */}
 align-items: center;
   font-family: 'The Girl Next Door', cursive;
-  font-size: 8px;
+  font-size: 20px;
 a {
 color: black;
     text-decoration: none;
@@ -28,9 +28,8 @@ class Navbar extends Component {
   render() {
     return (<Nav>
       <Menu>
-        <br/>
-        <br/>
-        <br/>
+
+
         <a  onClick={this.showSettings} className="menu-item--small" href=""></a>
         <a href="/">Home</a>
         <span>{' '}</span>
@@ -42,6 +41,8 @@ class Navbar extends Component {
         <a href='resume'>Résumé</a>
         <span>{' '}</span>
         <a href='genba-on-the-go'>Scrum</a>
+        <span>{' '}</span>
+        <a href='calendar'>Calendar</a>
       </Menu>
     </Nav>);
   }
