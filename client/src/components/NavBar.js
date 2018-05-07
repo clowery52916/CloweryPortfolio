@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Flash from 'react-reveal/Flash';
 import SidebarRightSlideOut from './SidebarRightSlideOut'
 import {stack as Menu} from 'react-burger-menu'
@@ -31,17 +31,17 @@ class Navbar extends Component {
         <br/>
         <br/>
         <br/>
-        <a onClick={this.showSettings} className="menu-item--small" href=""></a>
-        <Link to="/">Home</Link>
+        <a  onClick={this.showSettings} className="menu-item--small" href=""></a>
+        <a href="/">Home</a>
         <span>{' '}</span>
-        <Link to='/about'>
-          About</Link>
+        <a href='/about'>
+          About</a>
         <span>{' '}</span>
-        <Link to="/projects">Projects</Link>
+        <a href="/projects">Projects</a>
         <span>{' '}</span>
-        <Link to='resume'>Résumé</Link>
+        <a href='resume'>Résumé</a>
         <span>{' '}</span>
-        <Link to='genba-on-the-go'>Scrum</Link>
+        <a href='genba-on-the-go'>Scrum</a>
       </Menu>
     </Nav>);
   }
