@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Flash from 'react-reveal/Flash';
 import SidebarRightSlideOut from './SidebarRightSlideOut'
 import {stack as Menu} from 'react-burger-menu'
+import FontAwesomeIcon from 'react-fontawesome'
+import {Icons} from 'material-ui'
 
 const Nav = styled.div `
 width: 100vw;
@@ -30,19 +32,23 @@ class Navbar extends Component {
       <Menu>
 
 
-        <a  onClick={this.showSettings} className="menu-item--small" href=""></a>
-        <Link to="/">Home</Link>
+        {/* <a  onClick={this.showSettings} className="menu-item--small" href=""></a> */}
+        <Link to="/">
+        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</Link>
         <span>{' '}</span>
         <Link to='/about'>
-          About</Link>
+        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</Link>
         <span>{' '}</span>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</Link>
         <span>{' '}</span>
-        <Link to='resume'>Résumé</Link>
+        <Link to='resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
         {/* <span>{' '}</span>
         <a to='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <Link to='calendar'>Calendar</Link>
+        <Link to='calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
+        <Link to='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></Link>
+        <a href ='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
+        <a href ='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
       </Menu>
     </Nav>);
   }
