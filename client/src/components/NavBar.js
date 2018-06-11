@@ -48,13 +48,13 @@ class Navbar extends Component {
         <Link to='/about' onClick={() => this.state.closeMenu()}>
         <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</Link>
         <span>{' '}</span>
-        <a onClick={() => this.closeMenu()} href="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</a>
+        <Link to='/projects' onClick={() => this.closeMenu()}><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</Link>
         <span>{' '}</span>
-        <a onClick={() => this.closeMenu()} href='/resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</a>
+        <Link to='/resume' onClick={() => this.closeMenu()}><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
         {/* <span>{' '}</span>
         <a href='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <a onClick={() => this.closeMenu()} href='/calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</a>
+        <Link to='/calender' onClick={() => this.closeMenu()}><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
         {/* <a href='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></a> */}
         <a onClick={() => this.closeMenu()} href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
         <a onClick={() => this.closeMenu()} href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
