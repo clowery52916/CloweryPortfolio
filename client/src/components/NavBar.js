@@ -42,22 +42,22 @@ class Navbar extends Component {
          >
 
 
-        <Link to='/' onClick={() => this.state.closeMenu()}>
-        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</Link>
+        <a href="/" onClick={() => this.state.closeMenu()} >
+        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</a>
         <span>{' '}</span>
-        <Link to='/about' onClick={() => this.state.closeMenu()}>
-        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</Link>
+        <a href='/about' onClick={() => this.state.closeMenu()} >
+        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</a>
         <span>{' '}</span>
-        <Link to='/projects' onClick={() => this.state.closeMenu()}><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</Link>
+        <a href="/projects" onClick={() => this.state.closeMenu()} ><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</a>
         <span>{' '}</span>
-        <Link to='/resume' onClick={() => this.state.closeMenu()}><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
+        <a href='resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</a>
         {/* <span>{' '}</span>
         <a href='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <Link to='/calender' onClick={() => this.state.closeMenu()}><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
+        <a href='calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</a>
         {/* <a href='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></a> */}
-        <a onClick={() => this.state.closeMenu()} href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
-        <a onClick={() => this.state.closeMenu()} href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
+        <a href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
+        <a href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
       </Menu>
     </Nav>);
   }
