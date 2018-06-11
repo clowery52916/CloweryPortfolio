@@ -7,6 +7,7 @@ import {stack as Menu} from 'react-burger-menu'
 import FontAwesomeIcon from 'react-fontawesome'
 import {Icons} from 'material-ui'
 
+
 const Nav = styled.div `
 width: 100vw;
 @media (max-width: 320px) {
@@ -41,15 +42,17 @@ class Navbar extends Component {
         <span>{' '}</span>
         <Link to="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</Link>
         <span>{' '}</span>
-        <Link to='resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
+        <Link to='/resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
         {/* <span>{' '}</span>
         <a to='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <Link to='calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
+        <Link to='/calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
         {/* <Link to='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></Link> */}
         <a href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
         <a href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
           <Link  onClick={this.showSettings} className="menu-item--small" to="/"></Link>
+              <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="courtney-lowery52916"><a class="LI-simple-link" href='https://www.linkedin.com/in/courtney-lowery52916?trk=profile-badge'>Courtney Lowery</a></div>
       </Menu>
     </Nav>);
   }
