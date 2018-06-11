@@ -8,6 +8,7 @@ import NavBar from './NavBar'
 import { Slide } from 'react-slideshow-image';
 import Slider from 'react-styled-carousel';
 import { Carousel } from 'react-responsive-carousel';
+import InfiniteCarousel from 'react-leaf-carousel';
 
 const LandingImage = styled.div `
   background-image: url("https://media.istockphoto.com/photos/paint-explosion-picture-id170955250?k=6&m=170955250&s=612x612&w=0&h=EdRJNMtUrKY9_lgnv3sCUrozMjs3Ys8g9EJfa12Jg4A=");
@@ -117,19 +118,56 @@ class Projects extends Component {
 
         <LandingText>
           <h1>My Work</h1>
-            <Carousel autoPlay>
+          <Carousel autoPlay
+              breakpoints={[
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  },
+                },
+              ]}
+              dots={true}
+              showSides={true}
+              sidesOpacity={.5}
+              sideSize={.1}
+              slidesToScroll={4}
+              slidesToShow={4}
+              scrollOnDevice={true}
+            >
               <div>
-                <img src="https://i.imgur.com/3aXvpY1m.jpg" />
-                <a href="https://drinkdriver.herokuapp.com/">
+                <img src="https://i.imgur.com/3aXvpY1l.jpg" />Drink Driver
+                <Link to='chart' target='_blank' to="https://drinkdriver.herokuapp.com/">
                 <p className="legend">Drink Driver</p>
-              </a>
+              </Link>
               </div>
               <div>
-                <img src="https://i.imgur.com/DDBA5mdm.jpg" />
-                  <a href="https://squadboxfacialapp.herokuapp.com/">
+                <img src="https://i.imgur.com/DDBA5mdl.jpg" />
+                <Link to='chart' target='_blank' to="https://squadboxfacialapp.herokuapp.com/">
                 <p className="legend">SquadBox</p>
-              </a>
+              </Link>
               </div>
+              {/* <div>
+                <img src="" />
+                <Link to='chart' target='_blank' to="https://jamesvagabond.herokuapp.com/">
+                <p className="legend">Vagabond</p>
+              </Link>
+              </div>
+              <div>
+                <img src="PM.png" />
+                <Link to='chart' target='_blank' to="https://warrior-outreach-org.herokuapp.com/">
+                <p className="legend">Warrior Outreach</p>
+              </Link>
+              </div> */}
+
             </Carousel>
           );
 
@@ -179,7 +217,7 @@ class Projects extends Component {
           <span>{' '}</span>
           <span>{' '}</span>
         </LandingSubText>
-      </LandingImage>
+        </LandingImage>
     </HomeContainer>);
   }
 }

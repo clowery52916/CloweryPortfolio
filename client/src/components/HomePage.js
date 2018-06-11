@@ -42,13 +42,13 @@ class HomePage extends Component {
   render() {
     return (<HomeContainer>
 
-      <div className="video-background">
+      {/* <div className="video-background">
     <div className="video-foreground">
       <iframe width="854" height="480" src="https://www.youtube.com/embed/pGbIOC83-So?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=pGbIOC83-So" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
     </div>
     </div>
     <div id="vidtop-content">
-    <div className="vid-info">
+    <div className="vid-info"> */}
       <LandingImage>
         <Fade top="top">
           <LandingText>
@@ -58,8 +58,8 @@ class HomePage extends Component {
           </LandingText>
         </Fade>
       </LandingImage>
-    </div>
-    </div>
+    {/* </div>
+    </div> */}
     </HomeContainer>);
   }
 }
