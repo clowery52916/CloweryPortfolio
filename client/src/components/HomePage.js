@@ -53,7 +53,7 @@ class HomePage extends Component {
         <Fade top="top">
           <LandingText>
             <h1>
-              Let's make something beautiful....<br/> together
+              Let's make something beautiful....<br/><br/> together
             </h1>
           </LandingText>
         </Fade>
