@@ -21,7 +21,7 @@ class App extends Component {
         <Flex>
         <NavBar/>
         <Switch>
-          <Route exact path="/" component={HomePage}/>
+          <Route path="/" component={HomePage}/>
           <Route exact path="/projects" component={Projects} />
           <Route exact path='/about' component={About}/>
           <Route exact path="/resume" component={Resume}/>
