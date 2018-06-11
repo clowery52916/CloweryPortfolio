@@ -28,28 +28,36 @@ color: black;
 
 class Navbar extends Component {
 
+  state = {
+      menuOpen: false
+    }
+    closeMenu () {
+        this.setState({menuOpen: false})
+      }
   render() {
     return (<Nav>
-      <Menu>
+      <Menu
+           isOpen={this.state.menuOpen}
+           onStateChange={(state) => this.handleStateChange(state)}
+         >
 
 
-        <a  onClick={this.showSettings} className="menu-item--small" href="/"></a>
-        <Link to="/">
-        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</Link>
+        <a onClick={() => this.closeMenu()} href="/">
+        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</a>
         <span>{' '}</span>
-        <Link to='/about'>
-        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</Link>
+        <a onClick={() => this.closeMenu()} href='/about'>
+        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</a>
         <span>{' '}</span>
-        <Link to="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</Link>
+        <a onClick={() => this.closeMenu()} href="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</a>
         <span>{' '}</span>
-        <Link to='resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</Link>
+        <a onClick={() => this.closeMenu()} href='/resume'><FontAwesomeIcon className="far fa-paperclip"></FontAwesomeIcon><span>{' '}</span>Resume</a>
         {/* <span>{' '}</span>
-        <a to='genba-on-the-go'>Scrum</a> */}
+        <a href='genba-on-the-go'>Scrum</a> */}
         <span>{' '}</span>
-        <Link to='calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</Link>
-        {/* <Link to='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></Link> */}
-        <a href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
-        <a href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
+        <a onClick={() => this.closeMenu()} href='/calendar'><FontAwesomeIcon className="far fa-calendar"></FontAwesomeIcon><span>{' '}</span>Calendar</a>
+        {/* <a href='https://mail.google.com/mail/u/0/#inbox/FMfcgxmZVZDmmSdNCjCflfdpQPdHrklZ?compose=sJwlqpKPQhzgVdHNdQqrzhsHzXncppxPZxRqfPdJTfmhFhZNMhqcgHlbcsNJltfPPrDqBttkrZJlgZXJSQskpCQXCCLxnMqhPTcwndxnBZCCjjjfxtklWmXnRFMbsGxWhpdLcVXmqHXXghrVBJnprQHkLZRJdXsDQ'><FontAwesomeIcon className="far fa-google"><span>{' '}</span>Email me</FontAwesomeIcon></a> */}
+        <a onClick={() => this.closeMenu()} href='tel:470-259-5099'><FontAwesomeIcon className="far fa-mobile"></FontAwesomeIcon><span>{' '}</span>Call me</a>
+        <a onClick={() => this.closeMenu()} href='sms:470-259-5099'><FontAwesomeIcon className="far fa-comment"></FontAwesomeIcon><span>{' '}</span>Text me</a>
       </Menu>
     </Nav>);
   }
