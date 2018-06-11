@@ -42,11 +42,11 @@ class Navbar extends Component {
          >
 
 
-        <a onClick={() => this.closeMenu()} href="/">
-        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</a>
+        <Link to='/' onClick={() => this.closeMenu()}>
+        <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</Link>
         <span>{' '}</span>
-        <a onClick={() => this.closeMenu()} href='/about'>
-        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</a>
+        <Link to='/about' onClick={() => this.closeMenu()}>
+        <FontAwesomeIcon className="far fa-user"></FontAwesomeIcon><span>{' '}</span>About me</Link>
         <span>{' '}</span>
         <a onClick={() => this.closeMenu()} href="/projects"><FontAwesomeIcon className="fas fa-code"></FontAwesomeIcon><span>{' '}</span>Apps</a>
         <span>{' '}</span>
