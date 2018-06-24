@@ -23,7 +23,7 @@ const LandingImage = styled.div `
    }
   h1{
   font-family: 'Cookie', cursive;
- background: -webkit-linear-gradient(#faff00, #f02e9c);
+ background: -webkit-linear-gradient(rgba(0, 108, 132,1),rgba(255, 204, 187, 1));
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
   }
@@ -67,7 +67,7 @@ const LandingSubText = styled.div `
   text-align: center;
   font-family: 'Vibur', cursive;
   font-size: 20px;
-  background: -webkit-linear-gradient(#faff00, ##f02e9c);
+  background: -webkit-linear-gradient(rgba(0, 108, 132,1),rgba(255, 204, 187, 1));
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 320px) {
@@ -81,7 +81,7 @@ const Plug = styled.div `
   text-align: center;
   font-family: 'The Girl Next Door', cursive;
   font-size: 20px;
-  background: -webkit-linear-gradient(#faff00, ##f02e9c);
+  background: -webkit-linear-gradient (rgba(0, 108, 132,1),rgba(255, 204, 187, 1));
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float:right;
@@ -90,7 +90,7 @@ const Plug = styled.div `
    }
 
 h2, a {
-  background: -webkit-linear-gradient(#faff00, ##f02e9c);
+  background: -webkit-linear-gradient (rgba(0, 108, 132,1),rgba(255, 204, 187, 1));
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;

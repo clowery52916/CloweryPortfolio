@@ -20,7 +20,7 @@ width: 50vw;
   font-size: 20px;
   h1{
     font-family: 'The Girl Next Door', cursive;
-    background: -webkit-linear-gradient(#faff00, #f02e9c;
+    background: -webkit-linear-gradient((#006C84, #FFCCBB);
      -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;

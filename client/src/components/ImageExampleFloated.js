@@ -5,7 +5,7 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 
 const ImageOne = styled.img `
-  height: 100%;
+  height: 100vh;
   width: 40vw;
   float: left;
   padding:none;
@@ -15,35 +15,31 @@ const ImageOne = styled.img `
    }
 
 `
-const HeadingConatiner = styled.div `
-h1{
+const FirstLetter = styled.div `
+
   text-align: center
   font-family: 'Cookie', cursive;
   font-size: 40px;
-  background: -webkit-linear-gradient(#f02e9c, #faff00);
+  background: -webkit-linear-gradient(#006C84, #FFCCBB);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  @media (max-width: 320px) {
     display: none;
   }
-  h3{
-font-size:20px;
-  }
-}
-`
+`;
 const BodyContainer = styled.div `
   font-family: 'The Girl Next Door', cursive;
     background-position: center;
     background-size: cover;
+    text-align: center;
     background-repeat: no-repeat;
-    color:black;
     text-align: center;
     padding: inherit;
-    background: linear-gradient(to top, rgba(250, 255, 0, .5), rgba(240, 46, 156,1));
+    background: linear-gradient(to top, rgba(0, 108, 132,1),rgba(255, 204, 187, 1));
     font-weight: bold;
-  justify-content:center;
+    justify-content:center;
   @media (max-width: 320px) {
-     display: none;
+     display: flex;
    }
     span{
       font-size: 12px;
@@ -52,7 +48,7 @@ const BodyContainer = styled.div `
       font-family: 'Cookie', cursive;
       font-size: 25px;
       color: black;
-  ${'' /* background: -webkit-linear-gradient( #faff00, rgb(240, 46, 156));
+  ${ ''/* background: -webkit-linear-gradient( #faff00, rgb(240, 46, 156));
       -webkit-background-clip: text;
      -webkit-text-fill-color: transparent; */}
 
@@ -61,30 +57,70 @@ const BodyContainer = styled.div `
 
 `
 const Main = styled.div `
-    height: 100%;
+    height: 100vh;
 `
 
+const ImageExampleFloated = () => (<div>
+  <div id="parallax-container">
+    <section class='background-one'>
+      <section class='background-two'>
+        <section class='background-three'>
 
+          <div class="parallax-five">
+            <h2>Hello</h2>
+          </div>
+        </section>
+      </section>
+    </section>
 
-const ImageExampleFloated = () => (  <div>
-  <Main>
-
-
-    <ImageOne src='https://i.imgur.com/7TQHKlD.jpg'/>
-    <BodyContainer>
-
-      <br/>
-      <HeadingConatiner>
-
-        <h1>Hello</h1>
-        <h3>I am a full-stack Software Developer</h3>
-      </HeadingConatiner>
+  </div>
+  <BodyContainer>
+    <div id="parallax-container">
+      <section>
+        <div class="block">
+          <p>
+          <span class="first-character sc">H</span>ELLO
+        THERE, I'M COURTNEY! I AM AN EXTREMELY OUTGOING, POSITIVE PERSON. I LOVE TO SURROUND MYSELF WITH GOOD PEOPLE, GREAT BEER, AND GOOD FOOD. I LOVE CREATING THINGS,
+WHETHER IT'S MAKING A NEW WEB APP OR REFINISHING SOME FURNITURE I FOUND AT A THRIFT STORE. I JUST LOVE MAKING THINGS BEAUTIFUL AND UNIQUE. MOST
+DAYS, YOU CAN FIND ME WORKING IN MY HAMMOCK, LISTENING TO THE BIRDS AND TAKING IN THE BEAUTY OF NATURE. WHILE I AM NOT WORKING, YOU CAN
+USUALLY FIND MY HUSBAND AND ME AT A NEARBY BREWERY, A LOCAL FESTIVAL, A MOVIE OR A SHOW AT THE FOX. I DO PARTAKE IN THE OCCASIONAL BINGEWATCHING
+WEEKEND AS WELL.
+I LOVE WORKING WITH A TEAM AND BEING A PART OF SOMETHING GREAT! I WILL ENCOURAGE TEAM MEMBERS TO REACH THEIR GOALS, CHALLENGE AND PUSH THEM
+TO BE BETTER, BE A SHOULDER THEY CAN LEAN ON IF THEY'RE HAVING A ROUGH DAY, AND THEN I'LL BUY THEM A DRINK AFTERWARD TO CHEER THEM UP! I'LL BE
+HONEST WITH THEM, EVEN IF I KNOW IT'S NOT WHAT THEY WANT TO HEAR AND I WILL ALWAYS PULL MY OWN WEIGHT.
+I CAN MANAGE MULTIPLE THINGS AT ANY GIVEN TIME, KEEP MY COOL IN STRESSFUL SITUATIONS AND COME UP WITH SOLUTIONS THAT ARE NOT ALWAYS BLACK
+AND WHITE. I LIVE IN THE GREY AREA. I AM ORGANIZED, MOTIVATED, EXTREMELY DETAIL ORIENTED, AND I CAN PRIORITIZE LIKE A MASTER. I AM LOGICAL, BUT I AM
+ALSO THOROUGH AND I WILL MAKE SURE WHATEVER I AM DOING, I AM DOING IT RIGHT. I WILL NOT TAKE SHORT-CUTS. I WILL LEARN TO WORK "SMARTER" AS I
+GAIN KNOWLEDGE OF THE COMPANY AND CULTURE TO MAKE SURE I AM MANAGING MY TIME TO THE BEST OF MY ABILITY, BUT FIRST, I WILL DO IT RIGHT. I WILL
+ALWAYS WORK "HARDER" BECAUSE THAT IS JUST WHO I AM. I TAKE PRIDE IN WHAT I DO. I TAKE PRIDE IN THE TEAMS THAT I WORK WITH. I HAVE LEARNED THAT IN
+ORDER TO BE SUCCESSFUL IN ANY ASPECT OF LIFE, YOU MUST UNDERSTAND THE WHY BEHIND EVERYTHING. UNDERSTANDING THE WHYS KEEPS ME EMPATHETIC AND
+CURIOUS. IT GIVES ME THE OPPORTUNITY TO SEE THINGS THROUGH SOMEONE ELSE'S EYES AND ALLOWS ME TO VIEW THINGS FROM A DIFFERENT PERSPECTIVE. A
+GOOD TEAM ASKS THE WHY'S TOGETHER, COLLABORATES WITH ONE ANOTHER, AND FINDS OUT OF THE BOX SOLUTIONS TO SOLVE PROBLEMS.
+        </p>
+          <p class="line-break margin-top-10"></p>
+        </div>
+      </section>
+      <section>
+                <div class="block">
+                  <p>
+                    <span class="first-character sc">W</span>HO Double Down United we stand murrica Budweiser little bighorn Tippecanoe and Tyler too. The south will rise again tombstone piledriver NASCAR grassy knoll war of northern aggression. Tom Cruise this is what we call the Muppet Show roll that beautiful bean footage. Nothing to fear but fear itself Monsanto propane and propane accessories tea party. CNN’s ratings are down smallpox blanket American football G.I. Joe blame Canada. Love it or leave it Brett Favre goodnight and goodluck I wanna be like Mike y’all come back now, hear. Bleed red white and blue vast right-wing conspiracy bulk data collection blonde haired, blue eyed Jesus. Hot dog these colors don’t run y’all don’t mess with Texas Mr. Gorbachev, tear down this wall.</p>
+                  <p class="line-break margin-top-10"></p>
+</div>
+</section>
+      <section>
+        <div class="block">
+          <p>
+            <span class="first-character sc">W</span>ho am I?</p>
+          <p class="line-break margin-top-10"></p>
+          <p class="margin-top-10">
       <h4>Who am I?</h4>
       <p>
-        Hello there, I'm Courtney! I am a curious developer with a passion for learning. I love my life, I love to travel, I love my husband, and most of all, I want to make the world a better place through technology.<br/>
-        I am a beer connoisseur. I enjoy going to beer festivals with my husband in my spare time along with shows at The Fox, concerts, movies, and going on new adventures. I love to create things, whether it be in the development world, or in my own backyard. I have a passion for building things, refinishing old furniture and just creating something unique. I am also an avid animal lover and nature lover! This is my prettiest girl, Roxy.</p>
-      <Image src='https://i.imgur.com/YWNzG7Rt.jpg' size='small'/><br/>
-      <span>(Is she not the cutest pup you have ever seen!)</span>
+      </p>
+    </p>
+  </div>
+</section>
+
+
       <br/>
       <h4>Who am I as a developer?</h4>
       <p>
@@ -96,12 +132,9 @@ const ImageExampleFloated = () => (  <div>
       <h6>If you are a non-profit organization, in need of a developer, please email me or call me to discuss how I may be of service.
       </h6>
       {/* <ImageThree src='https://i.imgur.com/QDOBXiV.jpg' size='small' floated='right' /> */}
-
+    </div>
     </BodyContainer>
-
-</Main>
-</div>
-
-)
+  </div>
+  )
 
 export default ImageExampleFloated

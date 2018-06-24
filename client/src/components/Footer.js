@@ -7,7 +7,7 @@ import { SocialIcon } from 'react-social-icons';
 const FooterStyle = styled.div`
   height: 8vh;
   width: 100vw;
-  background: -webkit-linear-gradient(#faff00, #f02e9c);
+  background: -webkit-linear-gradient(#006C84, #FFCCBB);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
   color: white;

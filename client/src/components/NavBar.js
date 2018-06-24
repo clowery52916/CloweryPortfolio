@@ -7,7 +7,6 @@ import {stack as Menu} from 'react-burger-menu'
 import FontAwesomeIcon from 'react-fontawesome'
 import {Icons} from 'material-ui'
 
-
 const Nav = styled.div `
 width: 100vw;
 @media (max-width: 320px) {

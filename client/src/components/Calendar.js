@@ -5,7 +5,7 @@ const Text = styled.div`
   text-align: center;
   font-size: 50px;
   margin: 30px auto;
-  background: -webkit-linear-gradient(#faff00, #f437b9);
+  background: -webkit-linear-gradient(#006C84, #FFCCBB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     font-family: 'Cookie', cursive;
@@ -15,7 +15,7 @@ const Body = styled.div`
     justify-content: center;
     padding-top: 150px;
     padding-bottom: 80px;
-   background: -webkit-linear-gradient(#faff00, #f437b9);
+   background: -webkit-linear-gradient(#006C84, #FFCCBB);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 `
