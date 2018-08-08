@@ -18,7 +18,7 @@ ${ ''/* // ${ ''/* background: -webkit-linear-gradient(#faff00, #f437b9);
 ${ ''/* display: flex; */}
 ${ ''/* justify-content: space-between; */}
 align-items: center;
-  font-family: 'The Girl Next Door', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
 a {
 color: black;
@@ -33,7 +33,7 @@ class Navbar extends Component {
 
 
 
-        <Link to="/">
+        <Link to="/about">
         <FontAwesomeIcon className="far fa-home"></FontAwesomeIcon><span>{' '}</span>Home</Link>
         <span>{' '}</span>
         <Link to='/about'>

@@ -8,15 +8,25 @@ import Carousel from 'nuka-carousel';
 
 const LandingImage = styled.div `
   display: flex;
+    background-image: url(https://i.imgur.com/BnXEhCk.jpg&auto=format&fit=crop&w=1950&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   @media (max-width: 320px) {
      display: none;
+       background-image: url(https://i.imgur.com/BnXEhCk.jpg&auto=format&fit=crop&w=1950&q=80);
    }
 `;
 const HomeContainer = styled.div `
   height: 100vh;
   width: 100vw;
+  ${'' /* margin-left: 25em; */}
+  background-size:contain;
+  background-position: center;
+  background-image: url(https://i.imgur.com/BnXEhCk.jpg&auto=format&fit=crop&w=150&q=80);
  background-repeat: no-repeat;
- @media (max-width: 320px) {
+ @media (max-width: 220px) {
     display: none;
   }
 `;
@@ -25,8 +35,8 @@ const LandingText = styled.div `
 
   width:100vw;
   padding:10px;
-  font-family: 'Cookie', cursive;
-  font-size: 36px;
+  font-family: 'Destain', cursive;
+  font-size: 100px;
   text-align:center;
   background: -webkit-linear-gradient(#006C84, #FFCCBB);
  -webkit-background-clip: text;
@@ -46,47 +56,48 @@ class HomePage extends Component {
 
 
 <div>
-      <Fade top="top">
-        <LandingText>
-          <h1>
-            Let's make something beautiful....<br/><br/>
-            together
-          </h1>
-        </LandingText>
-      </Fade>
-
-      <div id="parallax-container">
+  <HomeContainer>
+<LandingImage/>
+</HomeContainer>
+      {/* <div id="parallax-container">
         <section>
           <div class="parallax-one">
-            <h2>AMERICA</h2>
+            <Fade top="top">
+              <LandingText>
+                <h2>
+                <a href='/projects'>APPLICATIONS
+                </a></h2>
+              </LandingText>
+            </Fade>
           </div>
-        </section>
+
         <br/>
         <div id="parallax-container">
-          <section>
+
             <div class="parallax-two">
-              <h2>THANK OUR VETS</h2>
+              <h2><a href='/about'>GET TO KNOW ME</a></h2>
             </div>
-          </section>
+
         </div>
         <br/>
         <br/>
         <div id="parallax-container">
-          <section>
+
             <div class="parallax-three">
-              <h2>contact</h2>
+              <h2><a href='/genba-on-the-go'>PRODUCT</a></h2>
             </div>
-          </section>
+
         </div>
         <br/>
         <br/>
         <div id="parallax-container">
-          <section>
+
             <div class="parallax-four">
-              <h2>projects</h2>
+              <h2><a href='/contact'>CONNECT</a></h2>
             </div>
+          </div>
           </section>
-        </div>
+        </div> */}
         {/* <div id="parallax-container">
         <section>
           <div class="block">
@@ -130,7 +141,7 @@ class HomePage extends Component {
     </div> */
         }
           </div>
-        </div>);
+        );
   }
 }
 

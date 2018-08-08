@@ -9,6 +9,7 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
+    "@jamesbliss/react-scrollable-anchor": "0.0.1",
     "axios": "^0.18.0",
     "cssify": "^1.0.3",
     "gsap": "^2.0.1",

@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Cookie|The+Girl+Next+Door');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab');
+
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Antic Slab';
 }
 .tech{
   height: 300vh;
@@ -50,55 +46,6 @@ body {
 .vid-info .acronym { display: none; }
 }
 
-.circle {
-  /* display:none; */
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  z-index: 800;
-  background:purple-paint-splatter;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-  -webkit-animation-duration: .20s;
-  animation-duration: .30s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.content {
-  position: relative;
-  top: .5px;
-  width: 2px;
-  text-align: center;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.5s;
-}
-.splatter {
-  position: absolute;
-  top: .1px;
-  right: .1px;
-  z-index: 799;
-  height: 150px;
-  width: 150px;
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -139,7 +86,7 @@ body {
 body {
     background: #ddd;
     background: linear-gradient(#ddd, #e8e8e8);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Antic Slab', sans-serif;
     height: 100vh;
     margin:0;
 }
@@ -186,7 +133,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    font: bold 12px/36px "Open Sans";
+    font: bold 12px/36px "Antic Slab";
     text-align: center;
     transform: rotateX(-89.99deg);
     transform-origin: top;
@@ -254,7 +201,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    font: bold 12px/36px "Open Sans";
+    font: bold 12px/36px "Antic Slab";
     text-align: center;
     transform: rotateX(-89.99deg);
     transform-origin: top;
@@ -336,7 +283,7 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
 }
 
 #parallax-container h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Antic Slab', sans-serif;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -346,7 +293,7 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
 }
 
 #parallax-container h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Antic Slab', sans-serif;
   font-size: 70px;
   letter-spacing: 10px;
   text-align: center;
@@ -358,7 +305,7 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
 }
 
 #parallax-container h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Antic Slab', sans-serif;
   font-size: 14px;
   line-height: 0;
   font-weight: 400;
@@ -373,138 +320,137 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
   font-size: 14px;
   line-height: 24px;
 }
-#parallax-container .parallax-one {
+#parallax-container a {
+  text-decoration: none;
+  color: white;
+}
+/* #parallax-container .parallax-one {
+  margin-top: 70px;
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1502358294-38a1911070dd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=852254f9896cee0dfceaa7bd8db9a937&auto=format&fit=crop&w=1950&q=80);
+  background-image: url(https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=137b1b593ba99716c7cdefcfd300b064&auto=format&fit=crop&w=1950&q=80);
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-}
+} */
 
-#parallax-container .parallax-two {
+/* #parallax-container .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: center;
+  width: 50%;
+  background-image: url(https://i.imgur.com/BnXEhCk.jpg&auto=format&fit=crop&w=1950&q=80);
+  background-attachment: fixed;
+  background-size:contain;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
+/* #parallax-container .parallax-three {
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1525362235907-ce816e4c7819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ab8355221593b396fdd94feca618edd9&auto=format&fit=crop&w=2850&q=80);
+  background-image: url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a027edb5b7b5ef475a0a4441a54b630&auto=format&fit=crop&w=1950&q=80);
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-#parallax-container .parallax-three {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1494972688394-4cc796f9e4c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5966fbd4a3212dc13c7ad81c4d665354&auto=format&fit=crop&w=2850&q=80);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+} */
 
 /* Images */
 
-#parallax-container .parallax-four {
+/* #parallax-container .parallax-four {
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
-  width: 100%;
-  background-image: url(https://i.imgur.com/CbpQFGx.png?1);
+  width: 25%;
+  background-image: url(https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a02f6067c00a2e7d578c02ece92ebbc5&auto=format&fit=crop&w=1949&q=80);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-}
+} */
+/* animated images on about page */
 #parallax-container .parallax-five {
-  /* padding-top: 200px;
-  padding-bottom: 200px;
-  overflow: hidden;
-  width: 100%;
-  background-image: url(https://i.imgur.com/7TQHKlD.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-
-  	/* max-height: 600px; */
-  	width: 100%;
-    height: 600px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    background-size: cover;
-    background-image: url(https://i.imgur.com/7TQHKlD.jpg);
-    background-attachment: fixed;
   	background-image:
-  		url('https://i.imgur.com/BdkXTOg.jpg&auto=format&fit=crop&w=2250&q=80'),
-      url('https://i.imgur.com/cRrdBVl.jpg&auto=format&fit=crop&w=2250&q=80'),
-      url('https://i.imgur.com/QDOBXiV.jpg&auto=format&fit=crop&w=2250&q=80'),
-      url('https://i.imgur.com/sEN8bCI.jpg&auto=format&fit=crop&w=2250&q=80');
+  		url('https://i.imgur.com/BdkXTOg.jpg&auto=format&fit=crop&w=200&q=80'),
+      url('https://i.imgur.com/cRrdBVl.jpg&auto=format&fit=crop&w=200&q=80'),
+      url('https://i.imgur.com/QDOBXiV.jpg&auto=format&fit=crop&w=200&q=80'),
+      url('https://i.imgur.com/sEN8bCI.jpg&auto=format&fit=crop&w=200&q=80');
     background-repeat:no-repeat;
-  	background-position:center;
-  	background-size:contain;
-    background-attachment: fixed;
-  	animation: 30s para infinite linear;
-  	}
+  	animation: 20s para infinite;
+    padding-top: 200px;
+    padding-bottom: 200px;
+   /* width: 100vw;
+   height: 100vh; */
+   overflow: hidden;
+   background-attachment: fixed;
+   background-size: 35px 100vh;
+   background-position: center;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
 
+  	}
+/* aninmation params */
 @keyframes para {
 	100% {
 		background-position:
-			-5000px 5%,
-			-3000px 20%,
-			5000px 20%,
-			3000px 10%;
+			-3000px 0%,
+			-1000px 0%,
+			3000px 100%,
+			1000px 100%;
 		}
 	}
+
+  /* about me section text block */
   #parallax-container .block {
-  background: white;
-  padding: 60px;
+  background: #e2e8e4;
+  padding: 30px;
   width: 820px;
   margin: 0 auto;
   text-align: justify;
 }
-
+/* 3 images on about me page of me - background before scrolling to text block  */
 #parallax-container .background-one {
   background-image: url(https://i.imgur.com/7TQHKlD.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: 25% 100vh;
 }
-/* #parallax-container .background-two {
-  background-image: url();
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position:left center;
-  background-size: contain;
-}
-#parallax-container .background-three {
+/*image of me before scrollig to text block */
+#parallax-container .background-two {
   background-image: url(https://i.imgur.com/QDOBXiV.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position:left center;
+  background-size: 25%;
+}
+/*image of me before scrollig to text block */
+#parallax-container .background-three {
+  background-image: url(https://i.imgur.com/BnXEhCk.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: right center;
-  background-size: contain;
-} */
+  background-size: 25%;
+}
 
 /* Extras */
 
@@ -530,14 +476,12 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
 @media screen and (max-width: 767px) {
   #parallax-container .block {
     padding: 30px;
-    width: 420px;
+
   }
   #parallax-container h2 {
     font-size: 30px;
   }
-  #parallax-container .block {
-    padding: 30px;
-  }
+
   #parallax-container .parallax-one, #parallax-container .parallax-two, #parallax-container .parallax-three {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -578,11 +522,10 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
   letter-spacing: 8px;
 }
 #parallax-container .block p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-transform: lowercase, capitalize;
 
 }
  #parallax-container .first-character {
@@ -594,7 +537,7 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
   padding-right: 8px;
   padding-left: 3px;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Antic Slab', sans-serif;
 }
 
 .sc {
@@ -607,5 +550,5 @@ background: linear-gradient(to top,  rgba(0, 108, 132,1),rgba(255, 204, 187, .5)
   padding-right: 8px;
   padding-left: 3px;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Antic Slab', sans-serif;
 }

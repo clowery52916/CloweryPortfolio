@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons';
 
-
+const FooterContainer = styled.div`
+  background-color: #006C84;
+`
 const FooterStyle = styled.div`
   height: 8vh;
   width: 100vw;
-  background: -webkit-linear-gradient(#006C84, #FFCCBB);
+  background: -webkit-linear-gradient(#e2e8e4, #FFCCBB);
   -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +37,7 @@ const FooterStyle = styled.div`
 class Footer extends Component {
   render() {
     return (
+      <FooterContainer>
       <div>
         <FooterStyle>
           <h2> ©</h2><h3>2018</h3>
@@ -45,6 +47,7 @@ class Footer extends Component {
           <h3>Atlanta,GA</h3>
         </FooterStyle>
       </div>
+      </FooterContainer>
     );
   }
 }

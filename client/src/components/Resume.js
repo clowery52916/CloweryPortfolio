@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const LandingImage = styled.img `
   overflow: scroll;
-  height:100vh;
+  height:80vh;
   width: 100vw;
   object-fit: contain;
   display: flex;
@@ -14,25 +14,36 @@ const LandingImage = styled.img `
    }
 `;
 
-const Main = styled.div`
+const Main = styled.div `
   background-image: url(https://media.istockphoto.com/photos/paint-splash-on-a-white-background-picture-id578561164?k=6&m=578561164&s=612x612&w=0&h=ZaghNzVXkcTQmoByFzmfHoSZJF1Tx8jlUr3yKVS9T-o=);
   background-size: cover;
   width:100vw;
-  height:100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   @media (max-width: 320px) {
      display: none;
    }
 
 `
+const TextContainer = styled.div `
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 70px;
+  padding-bottom: 30px;
+`
 
 class Resume extends Component {
 
   render() {
-    return (<div >
+    return (<div>
       <Main>
-      <LandingImage src='https://i.imgur.com/CKOE7MN.jpg' width={700} alt='resume'/>
-</Main>
+        <TextContainer>Click to Download my Resume</TextContainer>
+
+        <a id='thumbnail' href="https://files.acrobat.com/a/preview/04586ebd-cdd4-4811-9ff1-4f2a1ae9226d" target="_blank" title="Application for Assistance">
+          <LandingImage src="https://i.imgur.com/wlEOIH6h.png" width={700} padding={40} alt='resume'/>
+        </a>
+      </Main>
     </div>);
   }
 
